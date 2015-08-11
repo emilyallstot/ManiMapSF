@@ -151,13 +151,13 @@ def business_list():
 
 
 @app.route("/salons")
-def list_salonss():
+def list_salons():
     """Return page showing all the nail salons"""
     
     return render_template("salons_list.html")
 
 
-@app.route("/salons/<string:id>")
+@app.route("/salon/<string:id>")
 def show_melon(id):
     """Return page showing the details of a given salon"""
     
@@ -166,7 +166,7 @@ def show_melon(id):
     # return render_template("melon_details.html",
     #                        display_melon=melon)
 
-    
+
     return render_template("salon_info.html")
 
 
