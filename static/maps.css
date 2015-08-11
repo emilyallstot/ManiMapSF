@@ -1,0 +1,64 @@
+/*--------------------------------*/
+/*Sitewide*/
+/*--------------------------------*/
+
+body {
+    background-image: url('img/nails-64x64.png');
+    background-color: #00decb;
+    background-repeat: repeat;
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    color: #00decb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*--------------------------------*/
+/*Homepage*/
+/*--------------------------------*/
+
+#bearlink {
+    padding: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    color: #fff;
+}
+
+ div.topleft {
+    position: fixed;
+    top: 0;
+    left: 33px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 44px;
+    color: #5500ff;
+    opacity: 0.5;
+  }
+
+/*--------------------------------*/
+/*Maps*/
+/*--------------------------------*/
+
+#single-map {
+    width: 1024px;
+    height: 768px;
+}
+
+
+
+.window-content {
+    color: #04162b;
+    width: 150px;
+}

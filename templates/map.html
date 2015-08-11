@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head %}
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/static/mapstyles.js"></script>
+
+    <script src="/static/businesses.js"></script>
+
+{% endblock %}
+
+
+{% block body %}
+    <div id="single-map" align="center"></div>
+    <div class="topleft"><p>ManiMapSF.com</p></div>
+    <div id="names">Names go here</div>
+{% endblock %}
