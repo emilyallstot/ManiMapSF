@@ -166,11 +166,28 @@ def show_salon(yelp_id):
     return render_template("salon_info.html", business_name=business_name, \
         address=address, phone=phone, openhours=openhours)
 
+def healthynails():
+    """Reading a Using SF Healthy Nail Salon List copied from
+    http://www.sfenvironment.org/healthy-nail-salon-program
+    (Live map: http://www.sfenvironment.org/article/business/healthy-nail-salons)"""
+
+    healthynails_file = open('healthynails.csv')
+    healthynails_businesses = csv.reader(healthynails_file)
+
+
+    for row in healthynails_businesses:
+        business_name = row[0]
+        search_results = yelp_api.Search(term=business_name, limit=1, location="San Francisco, CA", categories="beautysvc,othersalons")
+        
+
+        for business in search_results.businesses:
+            print business.id
 
 
 
 if __name__ == "__main__":
     app.config['DEBUG'] = True
     # connect_to_db(app)
+    healthynails()
     app.run()
     print 
