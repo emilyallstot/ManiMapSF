@@ -61,7 +61,7 @@ def yelp_to_salon_list_SF(search_term):
 def read_csv():
     """Reads manually curated .csv file of nail salons in San Francisco
     and returns dictionary with key = yelp id, values for day of the week"""
-    yelp_ids_hours_file = open('yelp_ids10.csv')
+    yelp_ids_hours_file = open('yelp_ids100.csv')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids = {}
@@ -74,7 +74,7 @@ def read_csv():
         'Wednesday': infos[3], \
         'Thursday': infos[4], \
         'Friday': infos[5], \
-        'saturday': infos[6], \
+        'Saturday': infos[6], \
         'Sunday': infos[7] }
 
         # print infos[0], yelp_ids[infos[0]]['Monday']
@@ -105,21 +105,8 @@ def yelp_id_search(yelp_id):
 def map():
     """Show map of businesses."""
 
+
     return render_template("map.html")
-
-
-# @app.route('/businesses.json')
-# def business_info():
-#     """JSON information about businessess."""
-
-#     businesses = read_csv()
-#     for business in businesses:
-#         print business
-
-#     business1 = yelp_id_search('accent-on-beauty-san-francisco')
-
-
-#     return jsonify(business1)
 
 
 @app.route('/business_list.json')
@@ -153,21 +140,31 @@ def business_list():
 @app.route("/salons")
 def list_salons():
     """Return page showing all the nail salons"""
+
+    salons = read_csv().keys()
+    salons_list = []
+
+    for salon in salons:
+        salons_list.append(yelp_api.GetBusiness(salon).name)
     
-    return render_template("salons_list.html")
+    return render_template("salons_list.html", salons=salons_list)
 
 
-@app.route("/salon/<string:id>")
-def show_melon(id):
+@app.route("/salon/<string:yelp_id>")
+def show_salon(yelp_id):
     """Return page showing the details of a given salon"""
     
-    # melon = model.Melon.get_by_id(id)
-    # print melon
-    # return render_template("melon_details.html",
-    #                        display_melon=melon)
+    business = yelp_api.GetBusiness(yelp_id)
+    business_name = business.name.encode('ascii','ignore')
+    address = address_formatted(business.location.address)
+    phone = phone_formatted(business.phone)
+
+    openhours = read_csv()[yelp_id]
 
 
-    return render_template("salon_info.html")
+
+    return render_template("salon_info.html", business_name=business_name, \
+        address=address, phone=phone, openhours=openhours)
 
 
 

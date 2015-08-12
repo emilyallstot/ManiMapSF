@@ -64,11 +64,11 @@ function initialize() {
                 contentString = (
                     '<div class="window-content">' +
                         '<p><b><a href=\"/salon/' + business.yelp_id + '\">' +
-                        business.business_name + '</b></a></p>' +
+                        business.business_name + '</b></p>' + 
+                        '<p>(Click Here For More Info)</p></a></p>' +
                         '<p><b>Address: </b>' + business.address + '</p>' +
                         '<p><b>Phone: </b>' + business.phone + '</p>' +
                         '<p><b>Today\'s Hours: </b>' + business.todaysHours + '</p>' +
-                        
                     '</div>');
 
                 // Inside the loop we call bindInfoWindow passing it the marker,
@@ -90,5 +90,7 @@ function initialize() {
         });
     }
 }
+
+
 
 google.maps.event.addDomListener(window, 'load', initialize);
