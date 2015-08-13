@@ -63,7 +63,7 @@ function initialize() {
                 // Define the content of the infoWindow
                 contentString = (
                     '<div class="window-content">' +
-                        '<p><b><a href=\"/salon/' + business.yelp_id + '\">' +
+                        '<p><b><a href=\"/salons/' + business.yelp_id + '\">' +
                         business.business_name + '</b></p>' + 
                         '<p>(Click Here For More Info)</p></a></p>' +
                         '<p><b>Address: </b>' + business.address + '</p>' +

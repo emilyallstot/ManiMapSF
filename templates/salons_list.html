@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
 
 {% block body %}
+<h1><b>Nail Salons on ManiMapSF.com</b></h1>
+<h4>
+<p>See a San Francisco nail salon missing from the list? E-mail tips to <a href="mailto:manimapsf@mgail.com">ManiMapSF@gmail.com</a>
+<br>
+<br>
+</h4>
 
-{% for salon, yelp_id in salons %}
-<p><a href="salon/{{ yelp_id }}">{{ salon }}</p>
+{% for yelp_id, salon in salons.items() %}
+<p>
+<h3>
+<a href="salons/{{ yelp_id }}">{{ salon }}</p>
+</h3>
 {% endfor %}
 
 {% endblock %}

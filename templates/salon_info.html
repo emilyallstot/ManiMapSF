@@ -13,23 +13,30 @@
 
 <br>
 <h2>
-{% for place, pics in recent_photos.items() %}
-	<p>Recent photos of <a href="https://instagram.com/explore/locations/{{ insta_location_id }}" target="_blank">{{ place }} on Instagram:</a></p>
-</h2>
-	{% for pic in pics %}
-		<a href="{{ pic[1] }}" target="_blank">
-		<img src="{{ pic[0] }}" width=250px padding=50pm>
-		</a>
 
+	{% for place, pics in recent_photos.items() %}
+		<p>Recent photos of <a href="https://instagram.com/explore/locations/{{ insta_location_id }}" target="_blank">{{ place }} on Instagram:</a></p>
+	</h2>
+		{% for pic in pics %}
+			<a href="{{ pic[1] }}" target="_blank">
+			<img src="{{ pic[0] }}" width=250px padding=50pm>
+			</a>
+
+		{% endfor %}
 	{% endfor %}
-{% endfor %}
+
 
 <br>
 <br>
-<h1>Hours:</h1>
-{% for day, hours in openhours.items() %}
-	<h1>{{ day }}: {{ hours }}</h1>
-{% endfor %}
+<h1><b>Hours:</b></h1>
+<br>
+<h1>Monday: {{openhours['Monday']}}</h1>
+<h1>Tuesday: {{openhours['Tuesday']}}</h1>
+<h1>Wednesday: {{openhours['Wednesday']}}</h1>
+<h1>Thursday: {{openhours['Thursday']}}</h1>
+<h1>Friday: {{openhours['Friday']}}</h1>
+<h1>Saturday: {{openhours['Saturday']}}</h1>
+<h1>Sunday: {{openhours['Sunday']}}</h1>
 
 
 {% endblock %}

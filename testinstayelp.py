@@ -150,11 +150,12 @@ def business_list():
             businesses_for_map.update(business_infos)
             todays_hours = {'todaysHours': values[today]}
             business_infos[key].update(todays_hours)
-            # print business_infos
+            print business_infos
 
 
     # print businesses_for_map
     return jsonify(businesses_for_map)
+
 
 
 
@@ -169,21 +170,7 @@ def list_salons():
         salons_dict[salon] = yelp_api.GetBusiness(salon).name
 
     
-    return render_template("salons_list.html", salons=salons_list)
-
-
-@app.route("/salons")
-def list_salons1():
-    """Return page showing all the nail salons"""
-
-    salons = read_csv().keys()
-    salons_list = []
-
-    for salon in salons:
-        salons_list.append(yelp_api.GetBusiness(salon).name)
-
-    
-    return render_template("salons_list.html", salons=salons_list)
+    return render_template("salons_list.html", salons=salons_dict)
 
 
 def print_pics_dict1(yelp_id):
@@ -205,7 +192,7 @@ def print_pics_dict1(yelp_id):
             # print media.location.name
             # if recent_photos[media.location.name]
             # recent_photos[media.location.name] = {'instalocation': infos[8]}
-            print media.link
+            # print media.link
             if len(instapics) < 5:
                 pic = media.images[u'standard_resolution'].url.encode('ascii', 'ignore')
                 link = media.link
@@ -220,7 +207,7 @@ def print_pics_dict1(yelp_id):
     return recent_photos
 
 
-@app.route("/salon/<string:yelp_id>")
+@app.route("/salons/<string:yelp_id>")
 def show_salon(yelp_id):
     """Return page showing the details of a given salon"""
     
@@ -230,14 +217,15 @@ def show_salon(yelp_id):
     phone = phone_formatted(business.phone)
 
     openhours = read_csv()[yelp_id]
+    print openhours
 
     recent_photos_dict1 = print_pics_dict1(yelp_id)
-    print 'bar'*33
+    # print 'bar'*33
     recent_photos1 = recent_photos_dict1.values()[0]
-    print recent_photos1
+    # print recent_photos1
 
     insta_location_id1 = recent_photos_dict1.keys()[0]
-    print insta_location_id1
+    # print insta_location_id1
 
 
 
