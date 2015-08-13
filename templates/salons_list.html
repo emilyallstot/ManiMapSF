@@ -2,8 +2,8 @@
 
 {% block body %}
 
-{% for salon in salons %}
-<p>{{ salon }}</p>
+{% for salon, yelp_id in salons %}
+<p><a href="salon/{{ yelp_id }}">{{ salon }}</p>
 {% endfor %}
 
 {% endblock %}

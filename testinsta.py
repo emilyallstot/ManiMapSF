@@ -25,11 +25,9 @@ def read_csv_insta():
 
     for row in yelp_ids_hours:
         infos = row[0].split('|')
-        print infos[0], infos[8]
+        # print infos[0], infos[8]
         if infos[8] != "NONE":
         	instalocations[infos[0]] = infos[8]
-
-        # print infos[0], instalocations[infos[0]]['instalocation']
 
     return instalocations
 
@@ -54,11 +52,9 @@ def print_pics():
 	instapics = []
 	instalocations = read_csv_insta()
 
-	print instalocations.values()
+	# print instalocations.values()
 
-	for id in instalocations.values():
-		location_id = id
-		print location_id
+	for location_id in instalocations.values():
 		recent_media, next = api.location_recent_media(location_id=location_id)
 
 		for media in recent_media:
@@ -67,7 +63,7 @@ def print_pics():
 			# recent_photos[media.location.name] = {'instalocation': infos[8]}
 			if len(instapics) < 5:
 				instapics.append(media.images[u'standard_resolution'].url.encode('ascii', 'ignore'))
-				print media.images[u'standard_resolution'].url.encode('ascii', 'ignore')
+				# print media.images[u'standard_resolution'].url.encode('ascii', 'ignore')
 				place_name = media.location.name.encode('ascii', 'ignore')
 				recent_photos[place_name] = instapics
 		instapics = []
