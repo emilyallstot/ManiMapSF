@@ -61,7 +61,7 @@ def yelp_to_salon_list_SF(search_term):
 def read_csv():
     """Reads manually curated .csv file of nail salons in San Francisco
     and returns dictionary with key = yelp id, values for day of the week"""
-    yelp_ids_hours_file = open('yelp_ids100.csv')
+    yelp_ids_hours_file = open('yelp_ids10.csv')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids = {}
@@ -167,7 +167,7 @@ def show_salon(yelp_id):
         address=address, phone=phone, openhours=openhours)
 
 def healthynails():
-    """Reading a Using SF Healthy Nail Salon List copied from
+    """Reading a Using SF Healthy Nail Salon List copied froms
     http://www.sfenvironment.org/healthy-nail-salon-program
     (Live map: http://www.sfenvironment.org/article/business/healthy-nail-salons)"""
 
@@ -190,4 +190,3 @@ if __name__ == "__main__":
     # connect_to_db(app)
     healthynails()
     app.run()
-    print 
