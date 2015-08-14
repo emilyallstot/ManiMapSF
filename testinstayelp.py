@@ -168,7 +168,6 @@ def list_salons():
 
     for salon in salons:
         salons_dict[salon] = yelp_api.GetBusiness(salon).name
-
     
     return render_template("salons_list.html", salons=salons_dict)
 
