@@ -157,6 +157,34 @@ def business_list():
     return jsonify(businesses_for_map)
 
 
+# @app.route('/business_info.json')
+# def business_map():
+#     """JSON information about a business
+#     """
+#     now_datetime = datetime.datetime.now()
+
+#     today = now_datetime.strftime('%A')
+
+#     yelp_id = 
+#     businesses_for_map = {}
+
+#     #get business name from page
+#     #get business info
+#     # turn into dictionary for map
+
+#     for key, values in businesses.items():
+#         # time.sleep(.1)
+#         # print key
+#         business_infos = yelp_id_search(key)
+#         if business_infos:
+#             businesses_for_map.update(business_infos)
+#             todays_hours = {'todaysHours': values[today]}
+#             business_infos[key].update(todays_hours)
+#             print business_infos
+
+
+#     # print businesses_for_map
+#     return jsonify(businesses_for_map)
 
 
 @app.route("/salons")

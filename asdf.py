@@ -4,7 +4,7 @@ from instagram.client import InstagramAPI
 import csv
 import phonenumbers
 import time
-from flask import Flask, render_template, jsonify, redirect, flash, session
+from flask import Flask, render_template, jsonify, redirect, flash, session, request
 import jinja2
 import datetime
 
@@ -40,7 +40,7 @@ def phone_formatted(raw_phone):
 def yelp_ids_hours_csv_to_dict():
     """Convert master list to dictionary"""
 
-    yelp_ids_hours_file = open('shortlist')
+    yelp_ids_hours_file = open('insta9')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids_hours_dict = {}
@@ -80,8 +80,28 @@ def yelp_results_dict():
     return businesses
 
 
+def preseed_healthynails():
+    """Reading a Using SF Healthy Nail Salon List copied froms
+    http://www.sfenvironment.org/healthy-nail-salon-program
+    (Live map: http://www.sfenvironment.org/article/business/healthy-nail-salons)
+    and returning a dictionary of yelp_ids"""
+
+    healthynails_file = open('healthynails.csv')
+    healthynails_businesses = csv.reader(healthynails_file)
+    healthynails_dict = {}
+
+
+    for row in healthynails_businesses:
+        business_name = row[0]
+        search_results = yelp_api.Search(term=business_name, limit=1, location="San Francisco, CA", categories="beautysvc,othersalons")
+        for business in search_results.businesses:
+            healthynails_dict[business.id] = business.name
+
+    return healthynails_dict
+
+
 def seed_manimap():
-    """Use yelp_results_dict() to generate sitewide seed file"""
+    """Use yelp_results_dict() to generate sitewide seed files"""
 
     businesses = yelp_results_dict()
 
@@ -95,8 +115,26 @@ def seed_manimap():
                 value['address'], \
                 value['phone'].encode('ascii', 'ignore')])
 
+    healthy_nails_dict = preseed_healthynails()
+
+    with open('healthy.nails', 'wb') as yfile:
+        writer = csv.writer(yfile, delimiter='|')
+        for key, value in healthy_nails_dict.items():
+            writer.writerow([key.encode('ascii', 'ignore'), value.encode('ascii', 'ignore')])
+
     print "Site info has just been re-seeded"
     return "Site info has just been re-seeded"
+
+
+def healthynails_dict():
+    healthynails_dict = {}
+
+    with open('healthy.nails', 'rb') as yfile:
+        reader = csv.reader(yfile, delimiter='|')
+        for row in reader:
+            healthynails_dict[row[0]] = row[1]
+
+    return healthynails_dict
 
 
 def read_manimap():
@@ -140,8 +178,6 @@ def salon_info_instapics(instalocation):
 @app.route('/')
 def map():
     """Show map of businesses."""
-
-
     return render_template("map.html")
 
 
@@ -202,37 +238,26 @@ def show_salon(yelp_id):
     # salon_info_instapics(instalocation)
     recent_photos = salon_info_instapics(instalocation)  #[[url, src], [url, src]...]
     recent_photos_5 = recent_photos.values()[0].values()[0]
-    print recent_photos_5
+    # print recent_photos_5
     instaname = recent_photos.values()[0].keys()[0]
 
+    healthynails = "hidden"
+
+    for healthynails_salons in healthynails_dict().keys():
+        # print type(healthnails_id_unicode)
+        # healthynails_id_ascii = healthnails_id_unicode.encode('ascii','ignore')
+
+        if healthynails_salons == yelp_id:
+            healthynails = ""
 
     return render_template("salon_info.html", business_name=business_name, \
         address=address, phone=phone, openhours=openhours, recent_photos=recent_photos_5, \
-        yelp_id=yelp_id, instaname=instaname, instalocation=instalocation)
-
-
-# def healthynails():
-#     """Reading a Using SF Healthy Nail Salon List copied froms
-#     http://www.sfenvironment.org/healthy-nail-salon-program
-#     (Live map: http://www.sfenvironment.org/article/business/healthy-nail-salons)"""
-
-#     healthynails_file = open('healthynails.csv')
-#     healthynails_businesses = csv.reader(healthynails_file)
-
-
-#     for row in healthynails_businesses:
-#         business_name = row[0]
-#         search_results = yelp_api.Search(term=business_name, limit=1, location="San Francisco, CA", categories="beautysvc,othersalons")
-        
-
-#         # for business in search_results.businesses:
-#             # print business.id
-
+        yelp_id=yelp_id, instaname=instaname, instalocation=instalocation, \
+        healthynails=healthynails)
 
 
 if __name__ == "__main__":
     app.config['DEBUG'] = True
-    # seed_manimap()
-    # yelp_id = 'parlor-san-francisco-3'
+    healthynails_dict()
 
     app.run()

@@ -38,42 +38,47 @@ function initialize() {
     });
 
 
-
-
+var yelp_id;
+ // figure out what business we are on the page for to make the map
+$(document).ready(function(){
+    // alert($(".yelpID").attr("id"));
+    yelp_id = $(".yelpID").attr("id");
+});
 
 
     // Retrieving the information with AJAX
-
         $.get('/business_list.json', function (businesses) {
             // Attach markers to each business location in returned JSON
             var business, marker, contentString;
 
-            for (var yelp_id in businesses) {
-                business = businesses[yelp_id];
+            for (var all_yelp_ids in businesses) {
+                    if (all_yelp_ids === yelp_id) {
+                        business = businesses[all_yelp_ids];
+                    
+                    // Define the marker
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(business.bus_lat, business.bus_long),
+                        map: map,
+                        title: 'Business name: ' + business.business_name,
+                        icon: '/static/img/nails-small.png'
+                    });
 
-                // Define the marker
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(business.bus_lat, business.bus_long),
-                    map: map,
-                    title: 'Business name: ' + business.business_name,
-                    icon: '/static/img/nails-small.png'
-                });
 
+                    // Define the content of the infoWindow
+                    contentString = (
+                        '<div class="window-content">' +
+                            '<p><b><a href=\"/salons/' + business.yelp_id + '\" target=\"_blank\">' +
+                            business.business_name + '</b></p>' + 
+                            '<p>(Click Here For More Info)</p></a></p>' +
+                            '<p><b>Address: </b>' + business.address + '</p>' +
+                            '<p><b>Phone: </b>' + business.phone + '</p>' +
+                            '<p><b>Today\'s Hours: </b>' + business.todaysHours + '</p>' +
+                        '</div>');
 
-                // Define the content of the infoWindow
-                contentString = (
-                    '<div class="window-content">' +
-                        '<p><b><a href=\"/salons/' + business.yelp_id + '\" target=\"_blank\">' +
-                        business.business_name + '</b></p>' + 
-                        '<p>(Click Here For More Info)</p></a></p>' +
-                        '<p><b>Address: </b>' + business.address + '</p>' +
-                        '<p><b>Phone: </b>' + business.phone + '</p>' +
-                        '<p><b>Today\'s Hours: </b>' + business.todaysHours + '</p>' +
-                    '</div>');
-
-                // Inside the loop we call bindInfoWindow passing it the marker,
-                // map, infoWindow and contentString
-                bindInfoWindow(marker, map, infoWindow, contentString);
+                    // Inside the loop we call bindInfoWindow passing it the marker,
+                    // map, infoWindow and contentString
+                    bindInfoWindow(marker, map, infoWindow, contentString); 
+                }
             }
 
         });

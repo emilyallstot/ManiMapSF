@@ -1,4 +1,13 @@
 {% extends 'base.html' %}
+{% block head %}
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/static/mapstyles.js"></script>
+
+    <script src="/static/business.js"></script>
+
+{% endblock %}
 
 {% block body %}
 
@@ -7,6 +16,8 @@
 <br>
 <h2>{{ address }}</h2>
 <h2>{{ phone }}</h2>
+
+<p {{ healthynails }}><a href="http://www.sfenvironment.org/healthy-nail-salon-program" target="_blank"><img src="/static/img/healthynailslogo.png" width=166px></a></p>
 
 <br>
 <h1><a href="http://www.yelp.com/biz/{{ yelp_id }}" target="_blank">{{ business_name}} on Yelp</a><br></h1>
@@ -37,6 +48,17 @@
 <h1>Saturday: {{openhours['Saturday']}}</h1>
 <h1>Sunday: {{openhours['Sunday']}}</h1>
 
+<br>
+
+<div id="single-map" align="center"></div>
+<p class="yelpID" id="{{ yelp_id }}" hidden></p>
+</p>
+
+
+
+
+
+
+
 
 {% endblock %}
-
