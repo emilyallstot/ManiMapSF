@@ -180,6 +180,10 @@ def map():
     """Show map of businesses."""
     return render_template("map.html")
 
+@app.route('/about')
+def about_this():
+    return render_template("about.html")
+
 
 @app.route('/business_list.json')
 def business_list():
