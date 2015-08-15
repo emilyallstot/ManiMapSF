@@ -14,15 +14,14 @@
 <br>
 <h2>
 
-	{% for place, pics in recent_photos.items() %}
-		<p>Recent photos of <a href="https://instagram.com/explore/locations/{{ insta_location_id }}" target="_blank">{{ place }} on Instagram:</a></p>
-	</h2>
-		{% for pic in pics %}
-			<a href="{{ pic[1] }}" target="_blank">
-			<img src="{{ pic[0] }}" width=250px padding=50pm>
-			</a>
 
-		{% endfor %}
+	<p>Recent photos of <a href="https://instagram.com/explore/locations/{{ instalocation }}" target="_blank">{{ instaname }} on Instagram:</a></p>
+</h2>
+	{% for pic in recent_photos %}
+		<a href="{{ pic[1] }}" target="_blank">
+		<img src="{{ pic[0] }}" width=250px padding=50pm>
+		</a>
+
 	{% endfor %}
 
 
