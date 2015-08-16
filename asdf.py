@@ -20,6 +20,7 @@ yelp_api = yelp.Api(
 
 client_secret = os.environ["INSTAGRAM_CLIENT_SECRET"]
 client_id = os.environ["INSTAGRAM_CLIENT_ID"]
+access_token = os.environ["INSTAGRAM_ACCESS_TOKEN"]
 
 
 def address_formatted(raw_address):
