@@ -17,7 +17,8 @@ access_token = os.environ["INSTAGRAM_ACCESS_TOKEN"]
 api = InstagramAPI(client_id=client_id, access_token=access_token, client_secret=client_secret)
 
 
-recent_media, next = api.user_recent_media()
+recent_media, next = api.user_recent_media(count=50)
 
 for media in recent_media:
-	print media
+	instapic = media.images[u'standard_resolution'].url
+	print instapic

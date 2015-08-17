@@ -23,14 +23,12 @@
 <h3><a href="http://www.yelp.com/biz/{{ yelp_id }}" target="_blank">{{ business_name}} on Yelp</a><br></h3>
 
 <br>
-<h4>
-
-
-	<p><h3>Recent photos of <a href="https://instagram.com/explore/locations/{{ instalocation }}" target="_blank">{{ instaname }} on Instagram:</h3></a></p>
+<h4 >
+	<p  {{ instagrams }}><h3  {{ instagrams }}>Recent photos of <a href="https://instagram.com/explore/locations/{{ instalocation }}" target="_blank">{{ instaname }} on Instagram:</h3></a></p>
 </h4>
 	{% for pic in recent_photos %}
-		<a href="{{ pic[1] }}" target="_blank">
-		<img src="{{ pic[0] }}" width=150px padding=50pm>
+		<a href="{{ pic[1] }}" target="_blank"  {{ instagrams }}>
+		<img src="{{ pic[0] }}" width=150px padding=50pm  {{ instagrams }}>
 		</a>
 
 	{% endfor %}

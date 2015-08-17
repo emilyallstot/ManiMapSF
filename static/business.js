@@ -45,6 +45,14 @@ $(document).ready(function(){
     yelp_id = $(".yelpID").attr("id");
 });
 
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
 
     // Retrieving the information with AJAX
         $.get('/business_list.json', function (businesses) {
@@ -61,7 +69,9 @@ $(document).ready(function(){
                         map: map,
                         title: 'Business name: ' + business.business_name,
                         icon: '/static/img/nails-small.png'
+                       
                     });
+               
 
 
                     // Define the content of the infoWindow
@@ -95,6 +105,8 @@ $(document).ready(function(){
         });
     }
 }
+
+
 
 
 

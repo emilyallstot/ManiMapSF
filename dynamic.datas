@@ -1,52 +1,376 @@
-my-nails-san-francisco|My Nails|37.7983096|-122.4192203|1204 Green St |(415) 673-0311
-sydney-nail-spa-san-francisco|Sydney Nail Spa|37.797524482|-122.428761274|2758 Octavia St |(415) 928-1268
-merry-manicures-san-francisco|Merry Manicures|37.795338|-122.421288|2030 Polk St |(415) 931-9079
-bijou-nail-salon-san-francisco|Bijou Nail Salon|37.7704277|-122.4247971|28 Guerrero St |(415) 431-6245
-wendy-q-nail-salon-san-francisco|Wendy Q Nail Salon|37.7869431674|-122.411939129|524 Geary St |(415) 500-2048
-rainbow-nail-spa-san-francisco-2|Rainbow Nail Spa|37.7707894|-122.424165|1845 Market St |(415) 241-0878
-tiptoes-union-square-san-francisco|Tiptoes Union Square|37.7866134644|-122.408325195|207 Powell St 3rd Fl |(415) 397-8637
-ele-ela-nails-salon-san-francisco-2|Ele Ela Nails Salon|37.7650375|-122.4242935|388 Guerrero St |(415) 252-7276
-pacific-nails-san-francisco|Pacific Nails|37.7952614|-122.4207916|1546 Pacific Ave |(415) 567-9785
-silk-nail-salon-san-francisco|Silk Nail Salon|37.788039|-122.423725|1425 Franklin St |(415) 885-3277
+nail-care-by-theresa-san-francisco|Nail Care by Theresa|37.7801493|-122.48187|5815 Geary Blvd |(415) 806-8329
+zaya-nail-spa-san-francisco|Zaya Nail Spa|37.749412|-122.418518|2970 Mission St |(415) 525-3925
+lian-nails-san-francisco|Lian Nails|37.75079|-122.41864|2890 Mission St |(415) 648-5826
+cole-valley-salon-san-francisco|Cole Valley Salon|37.7664909|-122.4534073|510 Frederick St |(415) 731-6088
+sally-nail-spa-san-francisco-2|Sally Nail Spa|37.7514566|-122.4300706|3915 24th St Ste A |(415) 643-5592
+vasos-hair-design-at-west-portal-san-francisco|Vaso's Hair Design At West Portal|37.7385534346|-122.468472049|234 W Portal Avenue |(415) 661-3636
 parlor-san-francisco-3|Parlor|37.799129|-122.422119|2418 Polk St |(415) 801-5758
-chic-nails-salon-san-francisco|Chic Nails Salon|37.798225|-122.428513|1772 Union Street |(415) 776-3932
-simply-unique-nails-san-francisco|Simply Unique Nails|37.767865|-122.429722|734 14th St |(415) 255-4772
-la-fleur-2-san-francisco-2|La Fleur 2|37.7864494|-122.4092331|272 O'Farrell |(415) 391-7990
-mani-pedi-spa-san-francisco-2|Mani Pedi Spa|37.7912292|-122.42099|1545 Polk St |(415) 872-9686
-pearly-nails-san-francisco-2|Pearly Nails|37.7950191|-122.4234999|2105 Van Ness Ave |(415) 567-2866
-blend-salon-san-francisco|Blend Salon|37.7890668064|-122.409470156|555 Sutter St |(415) 296-0119
-nevas-beauty-san-francisco-2|Neva's Beauty|37.7894007|-122.4140741|1017 Bush St |(415) 775-1621
-creative-nail-care-san-francisco|Creative Nail Care|37.7759484|-122.4212697|191 Franklin St |(415) 861-8100
-studio-800-salon-san-francisco|Studio 800 Salon|37.7864227|-122.4166489|800 Geary St |
-city-beauty-salon-san-francisco|City Beauty Salon|37.7917061001|-122.420854121|1610 Polk St |(415) 928-9725
-lady-gold-fingers-san-francisco-2|Lady Gold Fingers|37.7909463644|-122.418131679|1432 California St |(415) 441-8857
-natural-nails-san-francisco|Natural Nails|37.785329|-122.407398|870 Market St Ste 717 |(415) 291-9122
-la-vie-nail-spa-san-francisco|La Vie Nail Spa|37.7867480367|-122.412791401|575 Geary St |(415) 775-7373
-tinas-nails-san-francisco|Tina's Nails|37.7896428108|-122.412629128|931 Bush St |(415) 346-5725
+jolie-nails-san-francisco|Jolie Nails|37.7757469565|-122.497524396|3604 Balboa St |(415) 386-2355
+mani-pedi-by-sandra-san-francisco-2|Mani-Pedi by Sandra|37.740553|-122.466602|40 W Portal Ave |(415) 699-9433
+top-nails-san-francisco|Top Nails|37.7243080139|-122.456932068|1326 Ocean Ave |(415) 587-9121
+first-nails-san-francisco|First Nails|37.798532322|-122.424456999|1520 Union St |(415) 474-3708
+helens-nails-san-francisco|Helen's Nails|37.76317|-122.48265|2301 Irving St |(415) 661-5894
 kt-nails-san-francisco-3|KT Nails|37.79261|-122.421112|1722 Polk St |(415) 928-1698
-valencia-nail-san-francisco|Valencia Nail|37.7636841|-122.4196948|2088 Mission St |(415) 863-8616
-union-nails-san-francisco-2|Union Nails|37.794777|-122.421791|1601 Pacific Ave |(415) 931-0414
-perfection-nails-spa-san-francisco|Perfection Nails Spa|37.790761|-122.4171972|1044 Hyde St |(415) 923-9888
-international-college-of-cosmetology-san-francisco-2|International College of Cosmetology|37.7880556136|-122.420101762|1224 Polk St |(415) 931-6333
+a-t-beauty-spa-san-francisco|A.T. Beauty Spa|37.7529857308|-122.406976372|2726 24th St |(415) 648-6389
+dynasty-nail-san-francisco|Dynasty Nail|37.7886343002|-122.400979623|107 Stevenson Street |(415) 975-8654
+perfect-fingers-san-francisco-2|Perfect Fingers|37.7285614|-122.4768829|3251 20th Ave Ste 139 |(415) 564-3031
+golden-nails-san-francisco|Golden Nails|37.7093019336|-122.451090664|5817 Mission St |(415) 469-9376
+ab-beauty-salon-san-francisco|AB Beauty Salon|37.7900009|-122.4072876|431 Stockton St |(415) 956-2668
+veer-and-wander-san-francisco|Veer & Wander|37.7732264848|-122.421025338|6 Brady St |(415) 864-3012
+rosy-heels-san-francisco|Rosy Heels|37.778084|-122.41008|180 7th St Ste 101 |(415) 861-4889
+nails-n-perfect-san-francisco-2|Nails-N-Perfect|37.7851453622|-122.406360313|833 Market St Ste 309 |(415) 543-3449
+orchid-nail-salon-san-francisco|Orchid Nail Salon|37.7888052911|-122.412272394|716 Sutter Street |(415) 929-6821
+la-belle-nail-spa-san-francisco|La Belle Nail Spa|37.722382|-122.436211|4739 Mission St |(415) 841-1744
+ele-ela-nails-salon-san-francisco-2|Ele Ela Nails Salon|37.7650375|-122.4242935|388 Guerrero St |(415) 252-7276
+white-butterfly-nail-and-spa-san-francisco|White Butterfly Nail & Spa|37.7980167241|-122.41057612|1455 Powell St |(415) 772-9928
+west-coast-beauty-nails-san-francisco|West Coast Beauty Nails|37.794283703|-122.419922054|1501 Jackson Street |(415) 928-1858
+la-bella-full-service-salon-san-francisco|La Bella Full Service Salon|37.722263|-122.436295|4747 Mission St |
+uranias-hand-and-foot-essentials-san-francisco|Urania's Hand and Foot Essentials|37.7981606|-122.4278564|1728 Union Street Suite 205 |(415) 706-5614
+nails-n-beauty-san-francisco|Nails N Beauty|37.7999813855|-122.442472726|2385 Chestnut St |(415) 922-8891
+la-vie-nail-spa-san-francisco|La Vie Nail Spa|37.7867480367|-122.412791401|575 Geary St |(415) 775-7373
+jennys-beauty-world-san-francisco|Jenny's Beauty World|37.7760315|-122.4932251|3202 Balboa St |(415) 668-7027
+hong-kong-hair-nail-beauty-salon-san-francisco|Hong Kong Hair Nail Beauty Salon|37.712322|-122.407372|199 Leland Ave |(415) 333-1005
 beauty-company-san-francisco|Beauty Company|37.7981199324|-122.422256917|2325 Polk St |(415) 567-8740
-sugarcoat-san-francisco|Sugarcoat|37.7877339|-122.4120711|619 Post St |(415) 441-1868
-tootsie-toes-san-francisco|Tootsie Toes|37.7930374146|-122.421379089|1741 Polk St |(415) 359-9844
-minna-nails-san-francisco-3|Minna Nails|37.7634315|-122.4237366|491 Guerrero St |(415) 255-6701
-mini-nails-san-francisco|Mini Nails|37.7904736251|-122.421085462|1621 California St |(415) 922-7119
-finest-nails-san-francisco|Finest Nails|37.7871483564|-122.419904619|1128 Polk St |(415) 359-1681
+opal-nail-spa-san-francisco-3|Opal Nail Spa|37.7455472946|-122.451969758|602 Portola Dr |(415) 661-4772
+bernal-heights-nails-care-san-francisco|Bernal Heights Nails Care|37.7390556782|-122.416935414|430 Cortland Ave Ste A |(415) 401-9096
+mais-beauty-salon-san-francisco|Mais Beauty Salon|37.7801570173|-122.478987469|5547 Geary Blvd |(415) 752-1642
+citi-beauty-skincare-san-francisco|Citi Beauty Skincare|37.7749786|-122.4377899|Divisadero between Fell & Hayes |(415) 865-0909
+xtd-salon-and-spa-san-francisco|XTD Salon & Spa|37.7636568|-122.4778333|1838 Irving St |(415) 661-1980
+valencia-nail-san-francisco|Valencia Nail|37.7636841|-122.4196948|2088 Mission St |(415) 863-8616
+mary-anne-nails-and-hair-r-us-san-francisco|Mary-Anne Nails & Hair R US|37.7241973877|-122.45904541|1549 Ocean Avenue |(415) 586-2646
+taraval-nails-san-francisco-2|Taraval Nails|37.7428925782|-122.478165552|1123 Taraval St |(415) 731-5959
+marina-nails-san-francisco|Marina Nails|37.800847739|-122.43575111|1961 Chestnut Street |(415) 931-9195
+finishing-touch-nails-san-francisco|Finishing Touch Nails|37.7999611|-122.4408112|3250 Scott Street |(415) 928-1196
+high-touch-nail-and-salon-san-francisco|High Touch Nail & Salon|37.7641602|-122.468277|954 Irving St |(415) 566-1368
+salon-belle-linda-san-francisco|Salon Belle Linda|37.78491|-122.465419|4448 California St |(415) 752-7958
+wendy-q-nail-salon-san-francisco|Wendy Q Nail Salon|37.7869431674|-122.411939129|524 Geary St |(415) 500-2048
+finest-nails-ii-san-francisco|Finest Nails II|37.793037|-122.421379|1741 Polk St |(415) 359-9844
+nails-by-linda-san-francisco|Nails by Linda|37.7424265444|-122.488734797|2103 Taraval St |(415) 753-0920
+pacific-nails-san-francisco|Pacific Nails|37.7952614|-122.4207916|1546 Pacific Ave |(415) 567-9785
+vanity-beauty-lounge-san-francisco|Vanity Beauty Lounge|37.7949665483|-122.397372386|3 Embarcadero Ctr 2nd Fl |(415) 362-2242
+just-bloom-san-francisco|Just Bloom|37.7805916965|-122.481495515|388 22nd Ave |(415) 221-1199
+polished-by-svetlana-san-francisco|Polished By Svetlana|37.7641484141|-122.478305697|1269 20th Ave |(415) 571-9557
+cindy-pro-nails-san-francisco|Cindy Pro Nails|37.7144089|-122.4431915|5324 Mission St |(415) 333-8651
+studio-800-salon-san-francisco|Studio 800 Salon|37.7864227|-122.4166489|800 Geary St |
+lily-nail-care-san-francisco|Lily Nail Care|37.72638|-122.40284|2803 San Bruno Ave |(415) 468-1202
+twenty-89-hair-design-san-francisco|Twenty 89 Hair Design|37.7733007818|-122.450812384|2089 Hayes St |(415) 668-2245
+shear-image-salon-san-francisco|Shear Image Salon|37.7815338|-122.4572151|3520 Geary Blvd |(415) 752-0397
+cinta-salon-san-francisco|Cinta Salon|37.7872165403|-122.404990196|23 Grant Ave 2nd Fl |(415) 989-1000
+magic-nails-san-francisco|Magic Nails|37.7864677459|-122.409767881|325 Mason Street |(415) 346-7539
+the-i-spa-san-francisco|The I Spa|37.781705043|-122.404732704|InterContinental 888 Howard St, 6th Fl |(415) 616-6597
+salon-815-san-francisco|Salon 815|37.740551|-122.4654236|815 Ulloa St |(415) 731-6714
+new-york-hair-and-nail-san-francisco|New York Hair & Nail|37.7412403375|-122.422633767|3483 Mission St |(415) 285-8679
+sloane-square-beauty-salon-san-francisco-2|Sloane Square Beauty Salon|37.7404384|-122.466463|40 W Portal Ave |(415) 566-1800
+new-look-beauty-center-san-francisco-2|New Look Beauty Center|37.786869|-122.4078674|230 Powell St |(415) 421-5665
+q-spa-san-francisco|Q Spa|37.775150165|-122.437768131|604 Divisadero St |(415) 885-1272
+zenbi-nails-san-francisco|Zenbi Nails|37.8007887304|-122.436899096|2032 Chestnut St |(415) 447-8942
+cindy-nail-salon-san-francisco|Cindy Nail Salon|37.7425955|-122.4825299|1519 Taraval St |(415) 759-7318
+v-w-nail-care-san-francisco|V.W. Nail Care|37.797999233|-122.428004891|1745 Union St |(415) 440-1656
+star-lynn-beauty-lounge-san-francisco|Star Lynn Beauty Lounge|37.7711865306|-122.431992665|211 Steiner St |(415) 626-6264
+lily-beauty-salon-san-francisco|Lily Beauty Salon|37.7881699|-122.447937|3356 Sacramento St |(415) 345-1988
+nail-today-san-francisco-3|Nail Today|37.790065|-122.4028677|124 Sutter St Fl 3 |(415) 398-6223
+recharge-medical-and-day-spa-san-francisco-3|Recharge Medical & Day Spa|37.7911682|-122.4183578|1456 California St |(415) 409-3456
+five-star-nails-and-spa-san-francisco|Five Star Nails and Spa|37.7333107|-122.4343567|2920 Diamond St |(415) 333-6920
+hi-tech-nails-san-francisco|Hi-Tech Nails|37.7882576|-122.4406509|2007 Divisadero St |(415) 928-0324
 crystal-nail-spa-san-francisco|Crystal Nail Spa|37.7800218345|-122.485617399|2347 Clement St |
-zen-beauty-spa-san-francisco-2|Zen Beauty Spa|37.7978626893|-122.429584507|1933 Union St |(415) 292-6988
-marinello-schools-of-beauty-san-francisco|Marinello Schools of Beauty|37.781219|-122.410767|1035 Market St Ste 100 |(877) 695-9718
+modern-nail-bar-san-francisco|Modern Nail Bar|37.7577324|-122.3894272|803 22nd St |(415) 695-7472
+l-p-nail-care-san-francisco|L P Nail Care|37.7919502|-122.434761|2425 Fillmore St |(415) 563-1955
+sunflowers-nails-san-francisco-2|Sunflowers Nails|37.7765198|-122.4384918|773 A Divisadero St |(415) 931-1254
+flying-beauticians-san-francisco|Flying Beauticians|37.7878799|-122.4061279|166 Geary St Ste 900 |(415) 391-8929
+nevas-beauty-san-francisco-2|Neva's Beauty|37.7894007|-122.4140741|1017 Bush St |(415) 775-1621
+ck-hair-design-san-francisco|CK Hair Design|37.7819214|-122.4540329|3244 Geary Blvd |(415) 668-3868
+zaza-nail-spa-san-francisco|Zaza Nail Spa|37.782627|-122.392654|543 2nd St |(415) 495-6292
+the-cutting-edge-salon-san-francisco|The Cutting Edge Salon|37.7389873|-122.4133017|1000 Cortland Ave |(415) 970-3343
+simply-nails-san-francisco|Simply Nails|37.7082901|-122.4533997|5933 Mission St |(415) 333-2663
+harmony-nail-salon-san-francisco-4|Harmony Nail Salon|37.7543539|-122.4780696|1324 Noriega St |(415) 802-5290
+lilyans-beauty-salon-san-francisco|Lilyan's Beauty Salon|37.735649|-122.424911|3820 Mission St |(415) 206-1617
+nails-by-jenny-san-francisco|Nails by Jenny|37.7117118984|-122.404929176|50 Leland Avenue |(415) 333-6600
+generation-nails-san-francisco|Generation Nails|37.74158|-122.38765|3801 3rd Street Suite 525 |(415) 648-2933
+people-hair-and-nail-spa-san-francisco|People Hair & Nail Spa|37.7655787021|-122.430926487|207 Sanchez St |(415) 621-2729
+supreme-hair-cuts-san-francisco|Supreme Hair Cuts|37.7374001|-122.470192|360 W Portal Ave Ste B |(415) 731-4746
+international-college-of-cosmetology-san-francisco-2|International College of Cosmetology|37.7880556136|-122.420101762|1224 Polk St |(415) 931-6333
+sen-beauty-spa-san-francisco|Sen Beauty Spa|37.8009300232|-122.430084229|1734A Lombard St |(415) 292-6788
+four-seasons-nails-and-spa-san-francisco-2|Four Seasons Nails And Spa|37.7392693|-122.4168472|451B Cortland Ave |(415) 282-2531
+pampered-nails-by-tammy-san-francisco|Pampered Nails By Tammy|37.7892344|-122.4088717|500 Sutter St Ste 509 |(415) 568-5085
+wild-orchid-nails-and-spa-san-francisco|Wild Orchid Nails & Spa|37.787888|-122.406136|166 Geary St Ste 908 |(415) 758-2066
+queens-nail-san-francisco|Queen's Nail|37.7458|-122.41949|3189 Mission Street |(415) 824-1310
+fairyland-spa-san-francisco-3|Fairyland Spa|37.7964859009|-122.422172546|2139 Polk St Ste B |(415) 345-9188
+happy-nails-san-francisco|Happy Nails|37.7422981|-122.489418|2149 Taraval St |(415) 665-7831
+w-l-salon-san-francisco|W L Salon|37.7420616|-122.4924469|2439 Taraval St |(415) 681-3822
+minami-beauty-salon-san-francisco|Minami Beauty Salon|37.7423515|-122.4263382|1791 Church St |(415) 821-1704
+accent-on-beauty-san-francisco|Accent On Beauty|37.76412|-122.46791|924 Irving Street |(415) 731-3097
+head-to-toes-san-francisco|Head to Toes|37.73914285|-122.416895851|451 Cortland Ave |(415) 282-2531
+renaissance-skin-care-san-francisco|Renaissance Skin Care|37.787888|-122.406136|166 Geary St Ste 606 |(415) 434-2623
+hair-help-salon-san-francisco-2|Hair Help Salon|37.7624817|-122.3998718|1756 18th St |(415) 621-4011
+perfect-10-san-francisco|Perfect 10|37.7514801|-122.4270935|1211 Church St |(415) 821-4837
+yellow-orchid-nails-spa-san-francisco-2|Yellow Orchid Nails Spa|37.7910614|-122.4043121|323 Kearny St 2F |(415) 989-9633
+citrine-salon-san-francisco|Citrine Salon|37.7855988|-122.4330063|1724 Fillmore St |(415) 359-1840
+presidio-heights-salon-san-francisco|Presidio Heights Salon|37.7879333|-122.4498886|3470 Sacramento Street |(415) 346-2086
+creative-nails-san-francisco|Creative Nails|37.7996788|-122.4409103|3224 Scott St |(415) 928-1312
+snap-nails-san-francisco|Snap Nails|37.745505495|-122.452250719|602 Portola Dr |(415) 661-4772
+belli-capelli-aromatherapy-salon-and-day-spa-san-francisco|Belli Capelli Aromatherapy Salon & Day Spa|37.785717|-122.439667|1728 Divisadero St |(415) 346-4100
+city-famous-spa-san-francisco|City Famous Spa|37.799816|-122.438858|2272 Lombard St |(415) 346-4151
+nail-pretty-san-francisco|Nail Pretty|37.7880898118|-122.447326854|3315 Sacramento St |(415) 673-9818
+sugarcoat-san-francisco|Sugarcoat|37.7877339|-122.4120711|619 Post St |(415) 441-1868
+yaquesitas-nails-studio-san-francisco|Yaquesita's Nails Studio|37.7622414|-122.4141769|3150 18th St Ste 105 |(415) 745-4040
+noe-valley-nails-san-francisco|Noe Valley Nails|37.7471988648|-122.427052036|1484 Church St |(415) 920-8923
+sunrise-nail-and-facial-san-francisco|Sunrise Nail & Facial|37.7423802763|-122.424115017|1699 Dolores St |(415) 920-1831
+burke-williams-day-spa-san-francisco-2|Burke Williams Day Spa|37.7845965105|-122.406781912|845 Market St Level 5 |(415) 694-7984
+charmante-san-francisco|Charmante|37.8001328|-122.4096527|546 Columbus Ave |(415) 397-7200
 fingertips-nail-salon-san-francisco|Fingertips Nail Salon|37.7873535|-122.4221039|1309 Sutter Street |(415) 567-2092
 alifa-wong-beauty-and-bridal-san-francisco|Alifa Wong Beauty & Bridal|37.7866776|-122.4082565|207 Powell St Ste 300, 3rd Fl |(415) 306-8868
-castro-nail-salon-san-francisco|Castro Nail Salon|37.7619130658|-122.434995426|431 Castro St |(415) 252-1657
-v-w-nail-care-san-francisco|V.W. Nail Care|37.797999233|-122.428004891|1745 Union St |(415) 440-1656
-kittys-nails-san-francisco|Kitty's Nails|37.79105|-122.4180984|1436 California St |(415) 775-1286
-fairyland-spa-san-francisco-3|Fairyland Spa|37.7964859009|-122.422172546|2139 Polk St Ste B |(415) 345-9188
+tnails-san-francisco|Tnails|37.7992706|-122.4356689|3212 Fillmore St |(415) 987-1678
+nails-for-you-san-francisco|Nails For You|37.793949|-122.396736|17 Drumm St 2nd Fl |(415) 788-5081
 roseate-girl-san-francisco-2|Roseate Girl|37.797417|-122.431061|1929 Union St |(415) 928-2055
-nails-n-perfect-san-francisco-2|Nails-N-Perfect|37.7851453622|-122.406360313|833 Market St Ste 309 |(415) 543-3449
-mimi-hair-and-nail-design-san-francisco|Mimi Hair & Nail Design|37.7837318927|-122.419350073|745 Polk St |(415) 776-9189
-sutter-nails-san-francisco|Sutter Nails|37.7888565063|-122.409225464|535 Sutter St |(415) 398-3939
 milk-san-francisco-2|Milk +|37.799854|-122.422318|2500 Polk St |(415) 673-3332
-orchid-nail-salon-san-francisco|Orchid Nail Salon|37.7888052911|-122.412272394|716 Sutter Street |(415) 929-6821
+topcoat-nail-studio-san-francisco-2|TopCoat Nail Studio|37.7891273|-122.4029236|50 Post St 2nd Fl |(415) 500-2860
+west-coast-nails-and-facial-san-francisco|West Coast Nails and Facial|37.7946089208|-122.419864386|1821 Larkin St |(415) 928-1858
+two-sisters-san-francisco|Two Sisters|37.7970505|-122.4365997|2266 Union St Ste A |(415) 921-3151
+nova-nail-spa-san-francisco|Nova Nail Spa|37.7841682|-122.4044495|811 Mission St between 4th and 5th St |(415) 896-6682
+7-nail-spa-san-francisco-2|7 Nail Spa|37.719669|-122.438255|4907 Mission St Ste A |(415) 587-7969
+kiaras-beauty-salon-san-francisco|Kiaras Beauty Salon|37.753925845|-122.417883575|3264 23rd St |(415) 824-4836
+tiptoes-san-francisco|Tiptoes|37.7657089|-122.4018173|300 De Haro St Ste 336 |(415) 626-8637
+beach-beauty-salon-san-francisco|Beach Beauty Salon|37.8072137|-122.4159023|413 Beach St |(415) 345-9818
+sassi-beauty-salon-san-francisco|Sassi Beauty Salon|37.8004303|-122.4338303|1956 Lombard St Ste A |(415) 922-2998
+lucky-nails-san-francisco-4|Lucky Nails|37.7901406|-122.4013353|55A Sutter St |(415) 981-5321
+nails-by-vera-san-francisco|Nails by Vera|37.7878799|-122.4061279|166 Geary St Ste 1505 |(415) 989-2005
+thao-nail-studio-san-francisco|Thao Nail Studio|37.7986084802|-122.424849165|1540 Union St |(415) 756-6190
+church-nails-san-francisco|Church Nails|37.7514602244|-122.427351773|1211 Church St |
+fabulous-nails-spa-san-francisco-2|Fabulous Nails Spa|37.7820168|-122.4814835|2099 Clement St |(415) 668-3699
+descend-salon-san-francisco|Descend Salon|37.796978|-122.4352188|2185A Union St |(415) 440-6608
+zen-beauty-spa-san-francisco-2|Zen Beauty Spa|37.7978626893|-122.429584507|1933 Union St |(415) 292-6988
+empress-hair-and-nails-san-francisco|Empress Hair and Nails|37.7793243527|-122.431949079|1085 Fillmore St |(415) 563-8445
+center-nails-san-francisco|Center Nails|37.7527885|-122.4122009|3008 24th St |(415) 401-6245
+misas-nails-san-francisco|Misa's Nails|37.7174001932|-122.440250516|5083 Mission St |(415) 587-4218
+sutter-nails-san-francisco|Sutter Nails|37.7888565063|-122.409225464|535 Sutter St |(415) 398-3939
+cute-t-nails-san-francisco|Cute T Nails|37.782875|-122.469324|934 Clement St |(415) 831-1668
+town-and-country-beauty-salon-san-francisco|Town & Country Beauty Salon|37.76366|-122.47898|1944 Irving St |(415) 664-6133
+artistic-nail-care-san-francisco|Artistic Nail Care|37.7641232|-122.4675966|902 Irving St |(415) 564-3338
+nails-by-nancy-san-francisco|Nails By Nancy|37.7441825867|-122.420471191|3289 Mission St |(415) 642-9142
+zen-day-spa-san-francisco|Zen Day Spa|37.7714475086|-122.434959381|775 Haight St |(415) 558-8886
+its-all-about-you-salon-san-francisco|It's All About You Salon|37.76075|-122.43402|4051 18th St |(415) 621-2965
+nail-chic-san-francisco-2|Nail Chic|37.7511101|-122.4338837|1303 Castro St |(415) 970-9301
+d-salon-san-francisco|D Salon|37.7434196|-122.4707108|424 Taraval St |(415) 664-9989
+lady-gold-fingers-san-francisco-2|Lady Gold Fingers|37.7909463644|-122.418131679|1432 California St |(415) 441-8857
+rendez-vous-nails-san-francisco|Rendez-Vous Nails|37.7881393|-122.4463425|3247 Sacramento St |(415) 474-2205
+trio-nails-san-francisco|Trio Nails|37.787013|-122.430013|1832 Buchanan St |(415) 931-9261
+tinas-nails-san-francisco|Tina's Nails|37.7896428108|-122.412629128|931 Bush St |(415) 346-5725
+sunset-beauty-care-san-francisco|Sunset Beauty Care|37.7614403|-122.4861145|2232 Judah St |(415) 661-6150
+ultimate-hair-and-face-figure-salon-san-francisco|Ultimate Hair & Face Figure Salon|37.7830351889|-122.461423874|207 Clement St |(415) 752-2828
+tootsie-toes-san-francisco|Tootsie Toes|37.7930374146|-122.421379089|1741 Polk St |(415) 359-9844
+lilypad-spa-san-francisco|Lilypad Spa|37.791800648|-122.41748862|1198 Hyde St |(415) 525-3848
+sidney-nails-san-francisco|Sidney Nails|37.7880402|-122.4269104|Octavia Street Between Union and Green |
+a-t-beauty-salon-san-francisco|A.T Beauty Salon|37.7162843943|-122.440649495|919 Geneva Ave |
+franklin-beauty-salon-san-francisco|Franklin Beauty Salon|37.7886086|-122.4235001|1506 Franklin St |(415) 567-3861
+nice-studio-san-francisco|Nice Studio|37.7864227|-122.4166489|800 Geary St |(415) 674-8959
+sallys-salon-san-francisco|Sally's Salon|37.797524482|-122.428761274|2758 Octavia St |(415) 776-9772
+artistic-nails-and-spa-san-francisco|Artistic Nails & Spa|37.7864488|-122.4400216|1826 Divisadero St |(415) 345-1235
+juicy-nails-san-francisco|Juicy Nails|37.7952385|-122.4113007|1262 Mason St |(415) 931-8881
+betty-beauty-care-san-francisco|Betty Beauty Care|37.7271594107|-122.403354049|2739 San Bruno Ave |(415) 656-3225
+yvonne-nails-san-francisco|Yvonne Nails|37.7804718|-122.4822235|5842 Geary Blvd |(415) 994-7617
+she-she-nail-salon-san-francisco|SHE-SHE Nail Salon|37.7390426|-122.4675838|167 W Portal Ave |(415) 681-3559
+tiptoes-union-square-san-francisco|Tiptoes Union Square|37.7866134644|-122.408325195|207 Powell St 3rd Fl |(415) 397-8637
+chic-nails-salon-san-francisco|Chic Nails Salon|37.798225|-122.428513|1772 Union Street |(415) 776-3932
+new-age-nails-san-francisco-2|New Age Nails|37.8011742979|-122.407753542|1543 Grant Ave |(415) 956-8807
+7-nails-san-francisco-2|7 Nails|37.728619203|-122.403969616|2611 San  Bruno Ave |(415) 468-0262
+qua-the-spa-at-soma-grand-san-francisco-2|Qua The Spa at Soma Grand|37.7782898|-122.412323|1162 Mission St |(415) 598-8686
+salon-mark-carlos-san-francisco|Salon Mark Carlos|37.7892612666|-122.405484393|11 Tillman Pl 2nd Fl |(415) 362-3111
+my-nails-san-francisco|My Nails|37.7983096|-122.4192203|1204 Green St |(415) 673-0311
+mahogany-house-of-styles-san-francisco-2|Mahogany House of Styles|37.7249263|-122.4603909|1712 Ocean Ave |(415) 239-5156
+doans-nails-san-francisco|Doan's Nails|37.789523|-122.408833|500 Sutter St Ste 812 |(415) 788-9778
+new-french-nails-san-francisco-2|New French Nails|37.7952118|-122.4007034|425 Battery St Ste D |(415) 495-0111
+germaine-nail-san-francisco|Germaine Nail|37.7765214443|-122.478336543|1817 Balboa Street |(415) 750-1470
+hand-touch-nails-care-san-francisco|Hand Touch Nails Care|37.799793|-122.442314|2371 Chestnut St |(415) 447-6015
+crystal-nail-san-francisco|Crystal Nail|37.7817802|-122.484581|2347 Clement St |(415) 752-4425
+haight-street-nails-san-francisco|Haight Street Nails|37.7693234|-122.451659|1795 Haight St |(415) 221-8928
+union-nails-san-francisco-2|Union Nails|37.794777|-122.421791|1601 Pacific Ave |(415) 931-0414
+labelle-day-spas-and-salons-san-francisco|LaBelle Day Spas & Salons|37.7892123|-122.4053871|233 Grant Ave 4th Fl |(415) 433-7644
+sunshine-nails-san-francisco|Sunshine Nails|37.7327728|-122.4345779|2966 Diamond St |(415) 334-5167
+nob-hill-spa-san-francisco|Nob Hill Spa|37.7914644|-122.4121171|The Scarlet Huntington 1075 California St |(415) 345-2888
+michelle-nails-no-2-san-francisco|Michelle Nails No 2.|37.7943115|-122.4072418|848 Clay St |(415) 398-2336
+little-saigon-hair-and-nails-salon-san-francisco|Little Saigon Hair & Nails Salon|37.7843689173|-122.416357398|611 Ellis Street |(415) 776-1474
+the-new-nails-san-francisco-4|The New Nails|37.8001778573|-122.440920398|2291 Chestnut St |(415) 346-5227
+shuas-nails-san-francisco|Shua's Nails|37.765423|-122.450661|127 Carl St |
+kathys-nails-san-francisco|Kathy's Nails|37.79106|-122.40431|323 Kearny Street |(415) 989-9633
+angels-nails-san-francisco|Angel's Nails|37.7451057|-122.4269638|1602 Church St |(415) 282-6245
+high-class-nails-san-francisco|High Class Nails|37.751247406|-122.430786133|3953 24th St |(415) 550-7948
+lv-nail-spa-san-francisco-2|LV Nail Spa|37.8000849|-122.4097803|546 Columbus Ave |(415) 397-7200
+nora-spa-and-salon-san-francisco|Nora Spa & Salon|37.7831283957|-122.398043945|351 3rd St |(415) 369-9028
+bamboo-san-francisco|Bamboo|37.7970886|-122.436882|2284B Union St |(415) 567-8812
+joy-joy-nail-san-francisco|Joy Joy Nail|37.7972368|-122.4342405|2115 Union St |(415) 921-2226
+atelier-emmanuel-salon-and-day-spa-san-francisco|Atelier Emmanuel Salon and Day Spa|37.7898365|-122.4071|415 Stockton Street 4th Floor |(415) 362-8063
+nail-care-for-you-san-francisco|Nail Care For You|37.8007719666|-122.407685146|1507 Grant Ave |(415) 362-3347
+tip-top-nails-san-francisco|Tip Top Nails|37.7462393045|-122.426861599|1547 Church St |(415) 642-2862
+beautiful-nails-san-francisco|Beautiful Nails|37.7899017|-122.4099197|771 Bush St |(415) 984-0488
+belladonna-nail-salon-san-francisco|BellaDonna Nail Salon|37.789118|-122.4080241|447 Sutter St Ste 419 |(415) 402-0668
+good-nails-san-francisco|Good Nails|37.7981071|-122.4359894|2208 Filbert St |(415) 346-6676
+pretty-parlor-san-francisco-4|Pretty Parlor|37.7635184581|-122.423745005|483 Guerrero St |(415) 556-2883
+creative-nail-care-san-francisco|Creative Nail Care|37.7759484|-122.4212697|191 Franklin St |(415) 861-8100
+hand-job-san-francisco|Hand Job|37.7598233521|-122.434847206|565 Castro St |(415) 863-2243
+episode-salon-and-spa-san-francisco|Episode Salon & Spa|37.7490602|-122.4273727|1360 Church St |(415) 641-1138
+lisas-beauty-salon-san-francisco-2|Lisa's Beauty Salon|37.7478154|-122.4272101|1448 Church St |(415) 282-5866
+four-seasons-nails-and-tanning-san-francisco|Four Seasons Nails & Tanning|37.7735385155|-122.450126772|2076 Hayes St |(415) 386-2793
+bayview-nail-care-san-francisco|Bayview Nail Care|37.74262|-122.42154|3371 Mission St |(415) 282-3828
+paradise-nail-spa-san-francisco|Paradise Nail Spa|37.8031732142|-122.414228395|948 Columbus Ave |(415) 440-8808
+color-nails-and-skincare-san-francisco|Color Nails & Skincare|37.7149426192|-122.442360073|5270 Mission St |(415) 333-6850
+mademoiselle-nails-san-francisco|Mademoiselle Nails|37.7704200894|-122.403311133|681 Townsend St |(415) 553-4081
+forever-nails-by-kim-san-francisco|Forever Nails By Kim|37.7379660233|-122.468731888|297 W Portal Ave |(415) 682-5528
+pink-lotus-nails-san-francisco-2|Pink Lotus Nails|37.7793243527|-122.431949079|1085 Fillmore St |(415) 757-0309
+kittys-nails-san-francisco|Kitty's Nails|37.79105|-122.4180984|1436 California St |(415) 775-1286
+spa-natural-san-francisco|Spa Natural|37.7833241969|-122.45908767|399 Arguello Blvd |(650) 787-3440
+face-it-salon-and-spa-san-francisco|Face It Salon & Spa|37.7633142471|-122.434107587|2343 Market St |(415) 431-7233
+kims-pro-nails-san-francisco|Kim's Pro Nails|37.7148567885|-122.442453951|5282 Mission St |(415) 586-5211
+lee-nail-care-san-francisco|Lee Nail Care|37.7433130145|-122.470778078|452 Taraval Street |(415) 664-3299
+l-and-t-salon-san-francisco|L & T Salon|37.7314|-122.473167|2555 Ocean Ave Suite 100 |
+unique-design-nails-san-francisco|Unique Design Nails|37.7949750423|-122.423408255|2105 Van Ness Ave |(415) 567-2866
+california-salon-san-francisco|California Salon|37.78527|-122.46441|4350 California St |(415) 752-1628
+portola-nail-bar-san-francisco|Portola Nail Bar|37.7451295406|-122.451977134|619 Portola Dr |(415) 564-6690
+top-ten-nails-san-francisco|Top Ten Nails|37.7264218032|-122.43343167|4485 Mission St |(415) 452-9040
+ai-rose-spa-san-francisco|Ai Rose Spa|37.7757111|-122.5018692|4004 Balboa St |(415) 387-1998
+tena-pro-nails-san-francisco|Tena Pro Nails|37.7273699641|-122.403439879|2717 San Bruno Ave |(415) 656-0202
+castro-nail-salon-san-francisco|Castro Nail Salon|37.7619130658|-122.434995426|431 Castro St |(415) 252-1657
+lakeshore-nails-san-francisco|Lakeshore Nails|37.73304|-122.48972|1549 Sloat Blvd |(415) 504-6163
+bella-tu-san-francisco|Bella Tu|37.803566|-122.4335938|3643 Buchanan St |(415) 931-4721
+cinta-aveda-institute-san-francisco|Cinta Aveda Institute|37.7908973694|-122.404266357|305 Kearny St |(415) 989-4400
+zen-beauty-spa-san-francisco|Zen Beauty Spa|37.7385579|-122.4681425|221 W Portal Ave |(415) 661-6852
+pretty-nails-san-francisco|Pretty Nails|37.7651582658|-122.431005612|242 Sanchez St |(415) 553-8019
+nails-by-lavinia-san-francisco|Nails by Lavinia|37.7872949|-122.4085815|323 Geary St Ste 514 |(415) 956-1225
+mimi-hair-and-nail-design-san-francisco|Mimi Hair & Nail Design|37.7837318927|-122.419350073|745 Polk St |(415) 776-9189
+queen-bee-nail-salon-san-francisco|Queen Bee Nail Salon|37.7629682422|-122.43486464|2380 Market St. |(415) 252-8092
+americut-mays-nail-spa-san-francisco|Americut/May's Nail Spa|37.738121|-122.4684067|279 W Portal Ave |(415) 283-8311
+kim-etc-nail-care-san-francisco|Kim Etc Nail Care|37.78024|-122.47449|5131 Geary Boulevard |(415) 387-1824
+natural-beauty-salon-san-francisco|Natural Beauty Salon|37.7395813912|-122.467127591|105 W Portal Ave |(415) 665-2735
+silk-nail-salon-san-francisco|Silk Nail Salon|37.788039|-122.423725|1425 Franklin St |(415) 885-3277
+nails-by-lisa-san-francisco|Nails by Lisa|37.725445|-122.463387|1947 Ocean Ave |(415) 586-9055
+joys-hair-salon-san-francisco|Joys Hair Salon|37.795035392|-122.407851443|894 Washington St |(415) 391-3832
+mani-pedi-spa-san-francisco-2|Mani Pedi Spa|37.7912292|-122.42099|1545 Polk St |(415) 872-9686
+la-touched-salon-san-francisco|LA Touched Salon|37.7611202|-122.4306996|3903 18th St |(415) 341-0422
+the-pampered-girl-san-francisco-2|The Pampered Girl|37.7753983|-122.4229813|225 Gough St |(415) 431-4475
+lucys-pro-nails-san-francisco|Lucy's Pro Nails|37.7409706|-122.4231796|3486 Mission Street |(415) 647-8004
+american-pro-nails-san-francisco|American Pro Nails|37.7292186767|-122.404226437|2577 San Bruno Ave |(415) 468-7319
+sanctuary-spa-at-bay-club-of-san-francisco-san-francisco|Sanctuary Spa at Bay Club of San Francisco|37.803444|-122.402626|150 Greenwich St |(415) 901-9325
+salon-de-union-san-francisco-2|Salon de Union|37.797409|-122.431145|1933 Union St |(415) 292-6988
+thi-spa-and-nails-san-francisco|Thi Spa & Nails|37.7896996|-122.4056931|310 Sutter St 2nd Fl |(415) 399-9972
+julies-beauty-salon-san-francisco|Julies Beauty Salon|37.80093|-122.430084|1734 Lombard St |(415) 931-3101
+synergy-salon-san-francisco|Synergy Salon|37.7471365035|-122.459450439|410 Dewey Blvd |(415) 213-5031
+london-lass-beauty-salon-san-francisco|London Lass Beauty Salon|37.7991338074|-122.442013398|2476 Lombard St |(415) 922-1700
+jt-nails-san-francisco|JT Nails|37.786564976|-122.433302253|1848 Fillmore St |(415) 563-4373
+joseph-cozza-salon-san-francisco|Joseph Cozza Salon|37.7866222|-122.4043631|747 Market Street 4th Floor |(415) 633-3933
+sol-y-luna-spa-san-francisco|Sol Y Luna Spa|37.7313724|-122.4507686|691 Monterey Blvd |(415) 469-7323
+king-nails-san-francisco|King Nails|37.7229007334|-122.436098456|4705 Mission St |(415) 334-6225
+natural-salon-san-francisco|Natural Salon|37.7765312|-122.4418488|1518 Fulton St |(415) 674-7789
+beauty-for-you-san-francisco|Beauty for You|37.720905|-122.438148|4830 Mission St |(415) 334-6482
+sally-nail-spa-san-francisco|Sally Nail Spa|37.7513267845|-122.434363067|4106 24th St |(415) 285-1339
+carlton-hair-san-francisco|Carlton Hair|37.7841702537|-122.407433197|865 Market St Ste C28A San Francisco Centre |(415) 495-8300
+san-francisco-beauty-lounge-san-francisco|San Francisco Beauty Lounge|37.7851105|-122.4074173|870 Market St Ste 816 |(415) 312-9901
+donnas-nails-san-francisco|Donna's Nails|37.7267926186|-122.433143333|4467 Mission St |(415) 333-8883
+san-zen-nails-san-francisco|San Zen Nails|37.8006592|-122.4089508|580 Union St |(415) 986-2548
+prim-salon-san-francisco|Prim Salon|37.7598|-122.39608|1447 20th St |(415) 401-6264
+nail-arts-san-francisco|Nail Arts|37.7640266418|-122.469917297|1116 Irving St |(415) 664-5728
+sandy-nails-san-francisco|Sandy Nails|37.75239|-122.41327|3065 24th St |(415) 643-5220
+mimi-salon-san-francisco|Mimi Salon|37.7228965759|-122.436523438|4712 Mission St |(415) 584-4429
+elizabeth-hair-studio-san-francisco-3|Elizabeth Hair Studio|37.786555|-122.415127|706 Geary St |(415) 474-0688
+glamour-beauty-salon-san-francisco|Glamour Beauty Salon|37.7968693525|-122.399663329|205 Jackson St |(415) 362-2007
+teresita-nail-spa-san-francisco|Teresita Nail Spa|37.7524399012|-122.416060343|3194 24th St |(415) 404-8818
+le-trend-nail-salon-san-francisco|Le Trend Nail Salon|37.7765198|-122.4384918|783 Divisadero St |(415) 567-0162
+nail-fantasy-san-francisco|Nail Fantasy|37.7223815918|-122.436210632|4739 Mission Street |(415) 587-1867
+mak-and-co-san-francisco|Mak & Co|37.791382|-122.403931|344 Kearny St |(415) 956-0324
 nailtastic-san-francisco-3|Nailtastic|37.7958030701|-122.416824341|1300 Pacific Ave |(415) 370-3662
+angels-nail-salon-san-francisco|Angel's Nail Salon|37.746456|-122.419677|3170 Mission St |(415) 643-5323
+fekaso-hair-salon-san-francisco-2|Fekaso Hair Salon|37.7552097931|-122.421530263|3315 22nd St |(415) 416-6823
+relax-nails-san-francisco|Relax Nails|37.7703751624|-122.444390506|1340 Haight St |(415) 255-9188
+yzinn-nail-club-san-francisco-3|Yzinn Nail Club|37.7610092|-122.4307785|3903 18th St |(415) 934-8999
+ciao-bella-nails-san-francisco|Ciao Bella Nails|37.8001979738|-122.440763488|2277 Chestnut St |(415) 771-6666
+love-cheni-the-beauty-boutique-san-francisco|Love Cheni The Beauty Boutique|37.7805615216|-122.476589084|5332 Geary Blvd |(415) 571-8032
+good-looks-salon-san-francisco|Good Looks Salon|37.7896233|-122.4011688|564 Market St 2nd Fl |(415) 391-4045
+white-daisy-nail-spa-san-francisco|White Daisy Nail Spa|37.7377481014|-122.469260618|309 West Portal Ave |(415) 566-8609
+annies-deluxe-home-nail-care-san-francisco|Annie's Deluxe Home Nail Care|37.803819|-122.410417||(415) 418-8561
+miracle-spa-san-francisco|Miracle Spa|37.7823410059|-122.47436285|1411 Clement St |(415) 221-3388
+post-street-hair-and-nail-care-san-francisco|Post Street Hair & Nail Care|37.7857361734|-122.428956404|1648 Post St |(415) 921-5805
+blend-salon-san-francisco|Blend Salon|37.7890668064|-122.409470156|555 Sutter St |(415) 296-0119
+bella-nails-san-francisco|Bella Nails|37.799896|-122.439743|3231 Pierce St |(415) 885-1100
+west-portal-spa-san-francisco|West Portal Spa|37.7395782|-122.4676285|124 W Portal Avenue |(415) 566-6172
+the-girls-lounge-san-francisco|The Girls' Lounge|37.7806971|-122.4698134|4717 Geary Ave |(415) 828-2712
+daily-beauty-salon-and-spa-san-francisco|Daily Beauty Salon & Spa|37.7642181|-122.4643181|600 Irving St |(415) 566-2323
+elegant-nails-salon-san-francisco|Elegant Nails Salon|37.8008614|-122.429184|1688 Lombard St Ste A |(415) 441-7177
+lavande-nail-spa-san-francisco|Lavande Nail Spa|37.7656846493|-122.450361103|113 Carl St |(415) 566-5333
+katies-nails-san-francisco|Katie's Nails|37.7145690918|-122.442367554|5255 Mission Street |(415) 585-2361
+nancys-hair-and-nails-san-francisco|Nancy's Hair and Nails|37.714901|-122.438416|1078 Geneva Ave |(415) 587-6261
+nails-2001-san-francisco|Nails 2001|37.7970034629|-122.43581146|2213 Union Street |(415) 775-5838
+star-nails-san-francisco|Star Nails|37.724557668|-122.459559739|1615 Ocean Ave |(415) 586-3405
+linda-ocean-nails-san-francisco|Linda Ocean Nails|37.725601|-122.462395|1910 Ocean Ave |(415) 584-8666
+finest-nails-san-francisco|Finest Nails|37.7871483564|-122.419904619|1128 Polk St |(415) 359-1681
+the-final-touch-2-san-francisco-2|The Final Touch 2|37.7869314|-122.4467223|514 Presidio Ave |(415) 351-2088
+marinello-schools-of-beauty-san-francisco|Marinello Schools of Beauty|37.781219|-122.410767|1035 Market St Ste 100 |(877) 695-9718
+one-stop-beauty-supply-and-salon-san-francisco-2|One Stop Beauty Supply and Salon|37.7641215|-122.4644623|605 Irving St |(415) 564-9336
+phuong-nail-station-san-francisco|Phuong Nail Station|37.7969207764|-122.404884338|170 Columbus Ave Ste 115 |(415) 987-8889
+lyn-s-nail-care-san-francisco|Lyn 's Nail Care|37.783074|-122.45971|35 Clement St |(415) 573-6755
+hokus-pokus-salon-san-francisco|Hokus Pokus Salon|37.7442207|-122.4528198|115 Fowler Ave |(415) 753-5665
+gelous-nails-san-francisco|Gelous Nails|37.7514977753|-122.430069521|3915 - 24th St Ste A |(415) 643-5592
+momo-nails-salon-san-francisco|Momo Nails Salon|37.7455472946|-122.451969758|602 Portola Dr |(415) 661-4772
+lumina-european-nail-salon-san-francisco|Lumina European  Nail Salon|37.7878799|-122.4061279|166 Geary St 6th Floor |(415) 392-4780
+t-and-t-nails-san-francisco|T & T Nails|37.782898|-122.459335|405 Arguello Blvd |(415) 750-0287
+chris-spa-san-francisco|Chris' Spa|37.78088|-122.4604187|3821 Geary Blvd |(415) 666-3163
+pearly-nails-san-francisco-2|Pearly Nails|37.7950191|-122.4234999|2105 Van Ness Ave |(415) 567-2866
+victorias-nail-studio-san-francisco|Victoria's Nail Studio|37.7813454|-122.4615472|3934 Geary Blvd |(415) 386-5315
+manicure-and-pedicure-by-nancy-san-francisco|Manicure & Pedicure By Nancy|37.8003059328|-122.409799397|629 Union St |(415) 215-3078
+the-tidy-shoppe-san-francisco-2|The Tidy Shoppe|37.7813797|-122.4629517|4050 Geary Blvd |(415) 668-4050
+silky-touch-nail-salon-san-francisco|Silky Touch Nail Salon|37.7721405|-122.4312286|544 Haight St |(415) 255-8527
+citi-beauty-skin-care-san-francisco|Citi Beauty Skin Care|37.7743220329|-122.43759647|518 Divisadero St |(415) 865-0909
+urban-beauty-spa-san-francisco|Urban Beauty Spa|37.791454|-122.400162|130 Bush St 4th Fl |(415) 795-3439
+glow-hand-and-foot-spa-san-francisco|Glow Hand and Foot Spa|37.7763786|-122.4456863|1780 Fulton St |(415) 674-9952
+cortland-nails-salon-san-francisco|Cortland Nails Salon|37.7387695312|-122.415382385|626 Cortland Ave |(415) 550-8188
+laurel-heights-nail-salon-san-francisco|Laurel Heights Nail Salon|37.78761|-122.4505|3501 Sacramento Street |(415) 346-9388
+minna-nails-san-francisco-3|Minna Nails|37.7634315|-122.4237366|491 Guerrero St |(415) 255-6701
+mini-nails-san-francisco|Mini Nails|37.7904736251|-122.421085462|1621 California St |(415) 922-7119
+dianes-nail-care-san-francisco-3|Diane's Nail Care|37.7716217|-122.4333878|681 Haight St |(415) 621-1220
+sydney-nails-san-francisco|Sydney Nails|37.7409706|-122.4231796|3486 Mission St |(415) 647-8004
+sydney-nail-spa-san-francisco|Sydney Nail Spa|37.797524482|-122.428761274|2758 Octavia St |(415) 928-1268
+sparkle-san-francisco-san-francisco-3|Sparkle San Francisco|37.7539215|-122.4205627|1193 Valencia St Ste A |(415) 684-8802
+natural-nails-san-francisco|Natural Nails|37.785329|-122.407398|870 Market St Ste 717 |(415) 291-9122
+q-lotus-salon-san-francisco|Q Lotus Salon|37.7873488516|-122.423765659|1414 Sutter St |(415) 972-9995
+lido-nails-san-francisco|Lido Nails|37.7257103473|-122.402749881|2865 San Bruno Avenue |(415) 468-2418
+san-bruno-nails-san-francisco|San Bruno Nails|37.7259886265|-122.402987927|2832 San Bruno Ave |(415) 656-1146
+dolci-beauty-lounge-san-francisco-2|Dolci Beauty Lounge|37.7623901|-122.3976898|1521 18th St |(415) 285-9255
+cherish-san-francisco-2|Cherish|37.7906609|-122.4171524|1044 Hyde St |(415) 923-9888
+gloss-n-glam-san-francisco|Gloss 'n Glam|37.764832|-122.433472|258 Noe St |(415) 580-7079
+american-beauty-salon-nails-by-anna-san-francisco|American Beauty Salon Nails by Anna|37.7806015|-122.4791489|5548 Geary Blvd |(415) 387-6245
+pampered-hands-salon-san-francisco|Pampered Hands Salon|37.7909203|-122.3932114|180 Howard St Ste  G-3 |(415) 777-4263
+lux-salon-san-francisco|Lux Salon|37.7886906266|-122.408547476|441 Powell St 2nd Floor |(415) 693-9358
+simply-unique-nails-san-francisco|Simply Unique Nails|37.767865|-122.429722|734 14th St |(415) 255-4772
+mizu-spa-san-francisco|Mizu Spa|37.7768173|-122.3938828|274 King St |(415) 278-9988
+fancy-fingers-and-facials-san-francisco|Fancy Fingers & Facials|37.8057776392|-122.412787378|350 Bay Street |(415) 399-1431
+melon-nail-bar-san-francisco|Melon Nail Bar|37.783947|-122.407158|865 Market St 2nd Fl of Westfield San Francisco Ctr |(415) 995-2222
+market-nail-spa-san-francisco|Market Nail Spa|37.7680283|-122.4276886|2057 Market St |(415) 252-7052
+super-nails-and-spa-san-francisco|Super Nails & Spa|37.7285614|-122.4768829|3251 20th Ave Ste 234 |(415) 566-8585
+aqua-spa-san-francisco|Aqua Spa|37.7832229435|-122.4592942|14 Clement St |(415) 666-3273
+rumours-hair-and-nail-salon-san-francisco|Rumours Hair & Nail Salon|37.7873750031|-122.45295614|3665 Sacramento St |(415) 346-3333
+utoepia-foot-massage-and-nail-san-francisco|Utoepia Foot Massage & Nail|37.785724|-122.439562|1722 Divisadero St |(415) 567-8668
+bijou-nail-salon-san-francisco|Bijou Nail Salon|37.7704277|-122.4247971|28 Guerrero St |(415) 431-6245
+fancy-fingers-and-spa-san-francisco-2|Fancy Fingers & Spa|37.806191|-122.412869|Northpoint Shopping Center 2351 Powell St |(415) 399-1431
+salon-dna-san-francisco-4|Salon DnA|37.7890388827|-122.409444119|555 Sutter Street Suite 200 |(415) 956-1909
+new-beauty-san-francisco-2|New Beauty|37.7925677598|-122.421142459|1709 Polk St |(415) 885-4355
+spa-nordstrom-san-francisco|Spa Nordstrom|37.783944|-122.407118|865 Market St |(415) 977-5102
+quince-spa-san-francisco|Quince Spa|37.7582275198|-122.39530745|640 Texas St |(415) 920-9888
+amazing-nails-san-francisco-3|Amazing Nails|37.7772087604|-122.392583638|221 King St |(415) 926-8625
+leslies-nails-2-san-francisco|Leslie's Nails 2|37.784061|-122.432564|1548 Fillmore St |(415) 563-6029
+lotus-foot-care-at-home-san-francisco|Lotus Foot Care At Home|37.7486686707|-122.415794373||(415) 637-1401
+merry-manicures-san-francisco|Merry Manicures|37.795338|-122.421288|2030 Polk St |(415) 931-9079
+v-nail-spa-san-francisco|V Nail Spa|37.7627868652|-122.41973114|2138 Mission St |(415) 861-1021
+rainbow-nail-spa-san-francisco-2|Rainbow Nail Spa|37.7707894|-122.424165|1845 Market St |(415) 241-0878
+akua-nail-salon-san-francisco-2|Akua Nail Salon|37.74296|-122.471598|501 Taraval St |(415) 379-4915
+lombard-nail-spa-san-francisco-3|Lombard Nail Spa|37.79882|-122.44167|2447 Lombard St |(415) 937-2962
+la-fleur-2-san-francisco-2|La Fleur 2|37.7864494|-122.4092331|272 O'Farrell |(415) 391-7990
+la-fleur-hair-and-nail-spa-san-francisco|La Fleur Hair & Nail Spa|37.75967|-122.398376|1701 20th St |(415) 525-4840
+jolie-elegant-spa-san-francisco|Jolie Elegant Spa|37.724461|-122.457657|1418 Ocean Ave |(415) 585-2409
+city-beauty-salon-san-francisco|City Beauty Salon|37.7917061001|-122.420854121|1610 Polk St |(415) 928-9725
+pure-envy-spa-bar-san-francisco|Pure Envy Spa Bar|37.7777671|-122.4244195|476 Grove St |(415) 255-9911
+nevas-beauty-san-francisco|Neva's Beauty|37.798774|-122.442011|2467 Lombard St |(415) 346-2238
+perfection-nails-spa-san-francisco|Perfection Nails Spa|37.790761|-122.4171972|1044 Hyde St |(415) 923-9888
+rubis-nails-san-francisco|Rubis Nails|37.78577|-122.460495|4000 California St |(415) 379-8613
+glen-park-nails-san-francisco|Glen Park Nails|37.7342231238|-122.433306255|74 Wilder St |(415) 585-6844
+bliss-spa-san-francisco-5|Bliss Spa|37.785319|-122.400546|W San Francisco 181 3rd St, 4th Fl |(415) 817-4100
+nail-art-house-san-francisco-2|Nail Art House|37.7853129|-122.4631397|4224 California St Ste 202 |
+salon-828-san-francisco|Salon 828|37.7634742086|-122.47858409|1929 Irving St 20 Ave |(415) 665-1788
+san-francisco-institute-of-esthetics-and-cosmetology-san-francisco|San Francisco Institute of Esthetics & Cosmetology|37.7770462036|-122.407035828|1067 Folsom St |(415) 355-1734
+lombard-heights-nail-salon-san-francisco|Lombard Heights Nail Salon|37.7994892001|-122.437603176|3288 Steiner St |(415) 776-9688

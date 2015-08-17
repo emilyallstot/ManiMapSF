@@ -41,22 +41,25 @@ def phone_formatted(raw_phone):
 def yelp_ids_hours_csv_to_dict():
     """Convert master list to dictionary"""
 
-    yelp_ids_hours_file = open('insta9')
+    yelp_ids_hours_file = open('INSTTAGRAMS')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids_hours_dict = {}
 
     for row in yelp_ids_hours:
         infos = row[0].split('|')
-        yelp_ids_hours_dict[infos[0]] = { \
-        'Monday': infos[1], \
-        'Tuesday': infos[2], \
-        'Wednesday': infos[3], \
-        'Thursday': infos[4], \
-        'Friday': infos[5], \
-        'Saturday': infos[6], \
-        'Sunday': infos[7],
-        'instalocation': infos[8] }
+        try:
+            yelp_ids_hours_dict[infos[0]] = { \
+            'Monday': infos[1], \
+            'Tuesday': infos[2], \
+            'Wednesday': infos[3], \
+            'Thursday': infos[4], \
+            'Friday': infos[5], \
+            'Saturday': infos[6], \
+            'Sunday': infos[7],
+            'instalocation': infos[8] }
+        except:
+            print 'Error getting hours/instalocation for: ' +  infos[0]
 
     return yelp_ids_hours_dict
 
@@ -70,13 +73,17 @@ def yelp_results_dict():
     businesses = {}
 
     for yelp_id in yelp_ids:     # yelp_ids.keys() just all the yelp_ids
-        business = yelp_api.GetBusiness(yelp_id)
-        businesses[business.id] = { \
-        'business_name': business.name.encode('ascii','ignore'), \
-        'bus_lat': business.location.coordinate[u'latitude'], \
-        'bus_long': business.location.coordinate[u'longitude'], \
-        'address': address_formatted(business.location.address), \
-        'phone': phone_formatted(business.phone)}
+        try:
+            business = yelp_api.GetBusiness(yelp_id)
+            businesses[business.id] = { \
+            'business_name': business.name.encode('ascii','ignore'), \
+            'bus_lat': business.location.coordinate[u'latitude'], \
+            'bus_long': business.location.coordinate[u'longitude'], \
+            'address': address_formatted(business.location.address), \
+            'phone': phone_formatted(business.phone)}
+            print business.id
+        except:
+            print "Business not found on Yelp: " + business.id
 
     return businesses
 
@@ -162,16 +169,18 @@ def salon_info_instapics(instalocation):
 
     recent_photos = {}
     recent_photos_5 = []
+    try: 
+        recent_media, next = api.location_recent_media(location_id=instalocation)
 
-    recent_media, next = api.location_recent_media(location_id=instalocation)
-
-    for media in recent_media:
-        if len(recent_photos_5) < 5:
-            pic = media.images[u'standard_resolution'].url.encode('ascii', 'ignore')
-            link = media.link.encode('ascii', 'ignore')
-            recent_photos_5.append([pic, link])
-            place_name = media.location.name.encode('ascii', 'ignore')
-            recent_photos[instalocation] = { place_name: recent_photos_5 }
+        for media in recent_media:
+            if len(recent_photos_5) < 5:
+                pic = media.images[u'standard_resolution'].url.encode('ascii', 'ignore')
+                link = media.link.encode('ascii', 'ignore')
+                recent_photos_5.append([pic, link])
+                place_name = media.location.name.encode('ascii', 'ignore')
+                recent_photos[instalocation] = { place_name: recent_photos_5 }
+    except:
+        print "Couldn't get Instagram photos of" + instalocation
 
     return recent_photos
 
@@ -199,8 +208,11 @@ def business_list():
     businesses_for_map = {}
 
     for key, values in businesses.items():
-        businesses_for_map[key] = values
-        businesses_for_map[key].update({'todaysHours': hours[key][today]})
+        try:
+            businesses_for_map[key] = values
+            businesses_for_map[key].update({'todaysHours': hours[key][today]})
+        except:
+            print "Error getting business info for: " + key
 
     return jsonify(businesses_for_map)
 
@@ -223,8 +235,9 @@ def show_salon(yelp_id):
     """Return page showing the details of a given salon"""
     # print yelp_id
     business_info = read_manimap()
+
     business_info = business_info[yelp_id]
-    # print business_info
+    print business_info
     business_name = business_info['business_name']
     address = business_info['address']
     phone = business_info['phone']
@@ -239,15 +252,22 @@ def show_salon(yelp_id):
     openhours['Saturday'] = hours_instalocation['Saturday']
     openhours['Sunday'] = hours_instalocation['Sunday']
 
+
+    instagrams = ""
     instalocation = hours_instalocation['instalocation']
-    # salon_info_instapics(instalocation)
-    recent_photos = salon_info_instapics(instalocation)  #[[url, src], [url, src]...]
-    recent_photos_5 = recent_photos.values()[0].values()[0]
-    # print recent_photos_5
-    instaname = recent_photos.values()[0].keys()[0]
+    print instalocation
+    if instalocation != 'NONE':
+        recent_photos = salon_info_instapics(instalocation)  #[[url, src], [url, src]...]
+        recent_photos_5 = recent_photos.values()[0].values()[0]
+        instaname = recent_photos.values()[0].keys()[0]
+    else:
+        instaname = business_name
+        recent_photos_5 = ['null.jpg', 'null.jpg', 'null.jpg', 'null.jpg', 'null.jpg']
+        print "Instagram photos not found for: " + business_name
+        instagrams = "hidden"
+
 
     healthynails = "hidden"
-
     for healthynails_salons in healthynails_dict().keys():
         # print type(healthnails_id_unicode)
         # healthynails_id_ascii = healthnails_id_unicode.encode('ascii','ignore')
@@ -258,11 +278,11 @@ def show_salon(yelp_id):
     return render_template("salon_info.html", business_name=business_name, \
         address=address, phone=phone, openhours=openhours, recent_photos=recent_photos_5, \
         yelp_id=yelp_id, instaname=instaname, instalocation=instalocation, \
-        healthynails=healthynails)
+        healthynails=healthynails, instagrams=instagrams)
 
 
 if __name__ == "__main__":
     app.config['DEBUG'] = True
-    healthynails_dict()
+    # seed_manimap() #CHANGE THIS TO SCHEDULED PROCESS WHEN DEPLOYING
 
     app.run()
