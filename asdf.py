@@ -41,7 +41,7 @@ def phone_formatted(raw_phone):
 def yelp_ids_hours_csv_to_dict():
     """Convert master list to dictionary"""
 
-    yelp_ids_hours_file = open('INSTTAGRAMS')
+    yelp_ids_hours_file = open('shortlist')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids_hours_dict = {}
@@ -283,6 +283,7 @@ def show_salon(yelp_id):
 
 if __name__ == "__main__":
     app.config['DEBUG'] = True
+    # seed_manimap()
     # seed_manimap() #CHANGE THIS TO SCHEDULED PROCESS WHEN DEPLOYING
 
     app.run()

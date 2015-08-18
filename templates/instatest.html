@@ -1,1 +1,36 @@
-yo yo yo
+<!doctype html>
+<html>
+<head>
+	<style>
+	img {
+    	opacity: 0.7;
+    	filter: alpha(opacity=70); /* For IE8 and earlier */
+    	width:77px;
+    	/*margin:0;*/
+    	/*float:left;*/
+	} 
+	body {
+		overflow:hidden;
+		background-color: Silver;
+		margin:0;
+	}
+	#maincontainer {   
+		/*top:0px;*/
+		/*padding:0;*/
+		margin:auto; 
+		/*position:relative;*/
+		width:1129px;
+		/*height:100%;*/
+	}
+	</style>
+</head>
+<body>
+<div id="maincontainer">
+
+{% for photo in photos %}
+<img src="{{ photo }}">
+{% endfor %}
+
+</div>
+</body>
+</html>
