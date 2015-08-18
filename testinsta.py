@@ -54,9 +54,10 @@ def local_background_instapics():
    	return instapics
 
 
-@app.route('/seedinstapics')
+@app.route('/')
 def seedinstapic():
     """Show most recent @manimapsf instagram photos on a webpage"""
+    print 'boo'
 
     photos = local_background_instapics()
 

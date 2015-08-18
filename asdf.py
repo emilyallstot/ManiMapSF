@@ -194,6 +194,10 @@ def map():
 def about_this():
     return render_template("about.html")
 
+@app.route('/m')
+def bam():
+    return render_template("gradient.html")
+
 
 @app.route('/business_list.json')
 def business_list():
@@ -217,6 +221,10 @@ def business_list():
     return jsonify(businesses_for_map)
 
 
+@app.route('/auto')
+def autocomplete_page():
+    return render_template("autocomplete.html")
+
 @app.route("/salons")
 def list_salons():
     business_info = read_manimap()
@@ -237,7 +245,7 @@ def show_salon(yelp_id):
     business_info = read_manimap()
 
     business_info = business_info[yelp_id]
-    print business_info
+    # print business_info
     business_name = business_info['business_name']
     address = business_info['address']
     phone = business_info['phone']
@@ -255,7 +263,7 @@ def show_salon(yelp_id):
 
     instagrams = ""
     instalocation = hours_instalocation['instalocation']
-    print instalocation
+    # print instalocation
     if instalocation != 'NONE':
         recent_photos = salon_info_instapics(instalocation)  #[[url, src], [url, src]...]
         recent_photos_5 = recent_photos.values()[0].values()[0]
@@ -280,10 +288,45 @@ def show_salon(yelp_id):
         yelp_id=yelp_id, instaname=instaname, instalocation=instalocation, \
         healthynails=healthynails, instagrams=instagrams)
 
+def generate_auto():
+    file = open("newfile.js", "w")
+
+    businesses = read_manimap()
+    file.write('$(function(){\n\t var currencies = [\n')
+
+    for business in businesses.values():
+        business_name = business['business_name']
+        business_url = 'salons/' + business['yelp_id']
+        file.write('\t\t{ value: \'' + business_name + '\', data: \'' + business_url + '\' },\n')
+
+    file.write('\t];\n\n\n' +\
+    '\t$(\'#autocomplete\').autocomplete({\n' +\
+    '\t\tlookup: currencies,\n' +\
+    '\t\tonSelect: function (suggestion) {\n' +\
+    '\t\t\tvar thehtml = \'<strong>Currency Name:</strong> \' + suggestion.value + \' <br> <strong>Symbol:</strong> \' + suggestion.data;\n' +\
+    '\t\t\t$(\'#outputcontent\').html(thehtml);\n' +\
+    '\t\t}\n' +\
+    '\t});\n' +\
+    '});')
+
+    file.close()
+
+
+  # //   { value: 'Albanian lek', data: 'ALL' },?
 
 if __name__ == "__main__":
-    app.config['DEBUG'] = True
+    # app.config['DEBUG'] = True
     # seed_manimap()
     # seed_manimap() #CHANGE THIS TO SCHEDULED PROCESS WHEN DEPLOYING
+
+
+
+    # for business in businesses:
+        # print business.items()
+
+
+
+
+
 
     app.run()

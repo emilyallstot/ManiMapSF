@@ -7,11 +7,19 @@
 
     <script src="/static/business.js"></script>
 
-{% endblock %}
+     
+ 
+
+
+
+  {% endblock %}
+
+
+
 
 {% block body %}
 
-
+<div id="container">
 <h1>{{ business_name}}</h1>
 <br>
 <h4>{{ address }}</h4>
@@ -48,7 +56,7 @@
 
 <br>
 
-<div id="single-map" align="center"></div>
+<span id="single-map" align="center"></span>
 <p class="yelpID" id="{{ yelp_id }}" hidden></p>
 </p>
 

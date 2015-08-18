@@ -3,9 +3,10 @@
 /*--------------------------------*/
 
 body {
+    background: linear-gradient(270deg, #ff3f3f, #ffab3f, #feff3f, #3fff43, #3f93ff, #c73fff, #ff3f9e);
     /*background-image: url('img/nails-64x64.png');*/
-    background-color: #00decb;
-    background-repeat: repeat;
+    /*background-color: #00decb;*/
+    /*background-repeat: repeat;*/
     font-family: 'Pacifico', cursive;
 }
 
