@@ -1,6 +1,14 @@
 // function makeIcon (params) {
-//     if ( params.nearMe ) return 'the-near-me-image.png';
-//     else if ( params.whatever ) return 'the-whatever-image.png';
+//     if ( params.nearMe ) IHAVEVISITED {
+//         if () HEALTHYSALON {
+//             return 'static/img/nails-small-green-purple.png'
+//         }
+//         return 'static/img/nails-small-purple.png'
+//     }
+//     else if HEALTHYSALON {
+//         return 'static/img/nails-small-green.png'
+//     }
+//     else return 'static/img/nails-small.png'
 // }
 
 function initialize() {
