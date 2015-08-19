@@ -36,7 +36,7 @@ a:active {
     font-size: 36px;
     color: #fff;
 }
-
+/*
  div.topleft {
     position: fixed;
     top: 0;
@@ -46,7 +46,7 @@ a:active {
     font-size: 44px;
     color: #5500ff;
     opacity: 0.5;
-  }
+  }*/
 
 /*--------------------------------*/
 /*Maps*/
@@ -60,6 +60,6 @@ a:active {
 
 
 .window-content {
-    color: #04162b;
+    /*color: #04162b;*/
     width: 150px;
 }

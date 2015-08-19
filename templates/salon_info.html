@@ -19,7 +19,12 @@
 
 {% block body %}
 
+
+<!-- <span id="single-map" align="center"></span> -->
+<p class="yelpID" id="{{ yelp_id }}" hidden></p>
+</p>
 <div id="container">
+
 <h1>{{ business_name}}</h1>
 <br>
 <h4>{{ address }}</h4>
@@ -55,16 +60,5 @@
 <p>Sunday: {{openhours['Sunday']}}</p>
 
 <br>
-
-<span id="single-map" align="center"></span>
-<p class="yelpID" id="{{ yelp_id }}" hidden></p>
-</p>
-
-
-
-
-
-
-
 
 {% endblock %}

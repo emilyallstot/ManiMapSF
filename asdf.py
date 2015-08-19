@@ -41,7 +41,7 @@ def phone_formatted(raw_phone):
 def yelp_ids_hours_csv_to_dict():
     """Convert master list to dictionary"""
 
-    yelp_ids_hours_file = open('shortlist')
+    yelp_ids_hours_file = open('INSTTAGRAMS')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids_hours_dict = {}
@@ -289,13 +289,14 @@ def show_salon(yelp_id):
         healthynails=healthynails, instagrams=instagrams)
 
 def generate_auto():
-    file = open("newfile.js", "w")
+    file = open("static/currency-autocomplete.js", "w")
 
     businesses = read_manimap()
     file.write('$(function(){\n\t var currencies = [\n')
 
     for business in businesses.values():
         business_name = business['business_name']
+        business_name = business_name.replace('\'', '\\\'')
         business_url = 'salons/' + business['yelp_id']
         file.write('\t\t{ value: \'' + business_name + '\', data: \'' + business_url + '\' },\n')
 
@@ -303,8 +304,7 @@ def generate_auto():
     '\t$(\'#autocomplete\').autocomplete({\n' +\
     '\t\tlookup: currencies,\n' +\
     '\t\tonSelect: function (suggestion) {\n' +\
-    '\t\t\tvar thehtml = \'<strong>Currency Name:</strong> \' + suggestion.value + \' <br> <strong>Symbol:</strong> \' + suggestion.data;\n' +\
-    '\t\t\t$(\'#outputcontent\').html(thehtml);\n' +\
+    '\t\t\tlocation.href = "../" + suggestion.data' +\
     '\t\t}\n' +\
     '\t});\n' +\
     '});')
@@ -317,16 +317,7 @@ def generate_auto():
 if __name__ == "__main__":
     # app.config['DEBUG'] = True
     # seed_manimap()
-    # seed_manimap() #CHANGE THIS TO SCHEDULED PROCESS WHEN DEPLOYING
-
-
-
-    # for business in businesses:
-        # print business.items()
-
-
-
-
+    # generate_auto()
 
 
     app.run()
