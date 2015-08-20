@@ -41,7 +41,7 @@ def phone_formatted(raw_phone):
 def yelp_ids_hours_csv_to_dict():
     """Convert master list to dictionary"""
 
-    yelp_ids_hours_file = open('INSTTAGRAMS')
+    yelp_ids_hours_file = open('shortlist')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids_hours_dict = {}
@@ -198,6 +198,31 @@ def about_this():
 def bam():
     return render_template("gradient.html")
 
+def openNow(todaysHours):
+
+    try:
+        openhr, closehr = todaysHours.split(' - ')
+    except:
+        return ""
+
+    now_time = datetime.datetime.now()
+    now_date = now_time.strftime("%Y-%m-%d")
+    openhr_full = now_date + ' ' + openhr.upper()
+    closehr_full = now_date + ' ' + closehr.upper()
+
+    openhr = datetime.datetime.strptime(openhr_full, '%Y-%m-%d %I:%M%p')
+    closehr = datetime.datetime.strptime(closehr_full, '%Y-%m-%d %I:%M%p')
+
+    now_time = datetime.datetime.now()
+
+
+    if now_time > openhr and now_time < closehr:
+        return "Open Now"
+    elif now_time < openhr or now_time > closehr:
+        return "Closed Now"
+    else:
+        return ""
+
 
 @app.route('/business_list.json')
 def business_list():
@@ -214,9 +239,21 @@ def business_list():
     for key, values in businesses.items():
         try:
             businesses_for_map[key] = values
+        except:
+            "lame sauce" + key
+        try:
             businesses_for_map[key].update({'todaysHours': hours[key][today]})
         except:
-            print "Error getting business info for: " + key
+            "bad hours" + key
+        try:
+            businesses_for_map[key].update({'openNow': openNow(hours[key][today])})
+            print openNow(hours[key][today])
+        except: 
+            "bad times" + key
+        # except:
+        #     print "Error getting business info for: " + key
+
+
 
     return jsonify(businesses_for_map)
 
@@ -315,9 +352,9 @@ def generate_auto():
   # //   { value: 'Albanian lek', data: 'ALL' },?
 
 if __name__ == "__main__":
-    # app.config['DEBUG'] = True
+    app.config['DEBUG'] = True
     # seed_manimap()
     # generate_auto()
 
 
-    app.run()
+    app.run(port=8080)

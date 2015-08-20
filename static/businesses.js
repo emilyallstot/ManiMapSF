@@ -101,6 +101,7 @@ function initialize() {
                     '<p><b>Address: </b>' + business.address + '</p>' +
                     '<p><b>Phone: </b>' + business.phone + '</p>' +
                     '<p><b>Today\'s Hours: </b>' + business.todaysHours + '</p>' +
+                    '<p><b>' + business.openNow + '</b></p>' +
                 '</div>');
 
             // Inside the loop we call bindInfoWindow passing it the marker,
