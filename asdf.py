@@ -289,6 +289,10 @@ def business_list():
 def autocomplete_page():
     return render_template("autocomplete.html")
 
+@app.route('/u')
+def u_page():
+    return render_template("u.html")
+
 @app.route("/salons")
 def list_salons():
     business_info = read_manimap()

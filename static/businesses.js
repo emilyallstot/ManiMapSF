@@ -82,14 +82,28 @@ function initialize() {
             // Define the content of the infoWindow
             contentString = (
                 '<div class="window-content">' +
+
+                    // '<p><b><h2 class="animated zoomIn">' + 
+                    // '<a href=\"/salons/' + business.yelp_id + '\">' +
+                    // business.business_name + '</b></h2></p>' + 
+                    // '<p>(Click For More Info)</a></p>' +
+
+                    '<a href=\"/salons/' + business.yelp_id + '\"' +
+                    'onClick="MyWindow=window.open' + 
+                    '(\'/salons/' + business.yelp_id + '\',' + 
+                    '\'MyWindow\',width=600,height=300);' +
+                    'return false;\">' + 
                     '<p><b><h2 class="animated zoomIn">' + 
-                    '<a id="infowindow" href=\"/salons/' + business.yelp_id + '\">' +
                     business.business_name + '</b></h2></p>' + 
-                    '<p>(Click Here For More Info)</p></a></p>' +
-                    '<p><b>Address: </b>' + business.address + '</p>' +
-                    '<p><b>Phone: </b>' + business.phone + '</p>' +
+                    '<p>(Click For More Info)</a></p>' +
+
+
+                    // '<p><b>Address: </b>' + business.address + '</p>' +
+                    '<p><b><Phone: </b>' + business.phone + '</p>' +
                     '<p><b>Today\'s Hours: </b>' + business.todaysHours + '</p>' +
-                    '<p><b>' + business.openNow + '</b></p>' +
+                    '<p><b><h4 id="openclose">' + business.openNow + '</h4></b></p>' +
+
+
                 '</div>');
 
             // Inside the loop we call bindInfoWindow passing it the marker,

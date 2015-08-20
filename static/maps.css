@@ -40,10 +40,9 @@ a:active {
     height: 768px;
 }
 
-a#infowindow {
-    color:#CE6EAE;
+#openclose {
+    color: #FF3030;
 }
-
 .window-content {
     width: 150px;
 }
