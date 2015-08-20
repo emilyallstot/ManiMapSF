@@ -240,16 +240,16 @@ def business_list():
         try:
             businesses_for_map[key] = values
         except:
-            "lame sauce" + key
+            "Error retrieving basic business info for: " + key
         try:
             businesses_for_map[key].update({'todaysHours': hours[key][today]})
         except:
-            "bad hours" + key
+            "Couldn't get business hours for " + key
         try:
             businesses_for_map[key].update({'openNow': openNow(hours[key][today])})
             print openNow(hours[key][today])
         except: 
-            "bad times" + key
+            "Couldn't find if " + key + " is open right now."
         # except:
         #     print "Error getting business info for: " + key
 
@@ -282,7 +282,7 @@ def show_salon(yelp_id):
     business_info = read_manimap()
 
     business_info = business_info[yelp_id]
-    # print business_info
+
     business_name = business_info['business_name']
     address = business_info['address']
     phone = business_info['phone']
@@ -296,6 +296,11 @@ def show_salon(yelp_id):
     openhours['Friday'] = hours_instalocation['Friday']
     openhours['Saturday'] = hours_instalocation['Saturday']
     openhours['Sunday'] = hours_instalocation['Sunday']
+
+
+    now_datetime = datetime.datetime.now()
+    today = now_datetime.strftime('%A')
+    open_now =  openNow(openhours[today])
 
 
     instagrams = ""
@@ -323,7 +328,7 @@ def show_salon(yelp_id):
     return render_template("salon_info.html", business_name=business_name, \
         address=address, phone=phone, openhours=openhours, recent_photos=recent_photos_5, \
         yelp_id=yelp_id, instaname=instaname, instalocation=instalocation, \
-        healthynails=healthynails, instagrams=instagrams)
+        healthynails=healthynails, instagrams=instagrams, open_now=open_now)
 
 def generate_auto():
     file = open("static/currency-autocomplete.js", "w")
