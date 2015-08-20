@@ -41,7 +41,7 @@ def phone_formatted(raw_phone):
 def yelp_ids_hours_csv_to_dict():
     """Convert master list to dictionary"""
 
-    yelp_ids_hours_file = open('shortlist')
+    yelp_ids_hours_file = open('INSTTAGRAMS')
     yelp_ids_hours = csv.reader(yelp_ids_hours_file)
 
     yelp_ids_hours_dict = {}
@@ -223,6 +223,35 @@ def openNow(todaysHours):
     else:
         return ""
 
+def visited():
+    """Create dictionary of places I have visited"""
+
+    visited_yelp_ids_hours_file = open('visited')
+    yelp_ids_hours = csv.reader(visited_yelp_ids_hours_file)
+
+    visited_dict = {}
+
+    for row in yelp_ids_hours:
+        visited_business = row[0].split('|')
+        try:
+            visited_dict[visited_business[0]] = True
+        except:
+            print 'Error getting visited info for: ' +  visited_business[0]
+
+    return visited_dict
+
+def marker_colors(yelp_id):
+    healthynails = healthynails_dict()
+    visits = visited()
+    if yelp_id in healthynails:
+        if yelp_id in visits:
+            return '/static/img/healthy-visited.png'
+        return '/static/img/healthy.png'
+    elif yelp_id in visits:
+        return '/static/img/visited.png'
+    else:
+        return '/static/img/all.png'
+
 
 @app.route('/business_list.json')
 def business_list():
@@ -247,14 +276,12 @@ def business_list():
             "Couldn't get business hours for " + key
         try:
             businesses_for_map[key].update({'openNow': openNow(hours[key][today])})
-            print openNow(hours[key][today])
         except: 
             "Couldn't find if " + key + " is open right now."
-        # except:
-        #     print "Error getting business info for: " + key
-
-
-
+        try:
+            businesses_for_map[key].update({'marker': marker_colors(key)})
+        except:
+            "Error changing marker color for " + key
     return jsonify(businesses_for_map)
 
 
@@ -316,7 +343,6 @@ def show_salon(yelp_id):
         print "Instagram photos not found for: " + business_name
         instagrams = "hidden"
 
-
     healthynails = "hidden"
     for healthynails_salons in healthynails_dict().keys():
         # print type(healthnails_id_unicode)
@@ -359,7 +385,7 @@ def generate_auto():
 if __name__ == "__main__":
     app.config['DEBUG'] = True
     # seed_manimap()
-    # generate_auto()
+    # generate_auto() 
 
 
     app.run(port=8080)

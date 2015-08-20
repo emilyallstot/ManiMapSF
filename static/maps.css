@@ -4,20 +4,17 @@
 
 body {
     background: linear-gradient(270deg, #ff3f3f, #ffab3f, #feff3f, #3fff43, #3f93ff, #c73fff, #ff3f9e);
-    /*background-image: url('img/nails-64x64.png');*/
-    /*background-color: #00decb;*/
-    /*background-repeat: repeat;*/
     font-family: 'Pacifico', cursive;
 }
 
 a {
-    color: #ff69b4;
+    color: #000000;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
-    color: #000000;
+    color: #999999;
 }
 
 a:active {
@@ -26,27 +23,13 @@ a:active {
 }
 
 /*--------------------------------*/
-/*Homepage*/
+/*Navbar*/
 /*--------------------------------*/
-
-#bearlink {
-    padding: 200px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+#navtitle {
+    vertical-align: top;
     font-size: 36px;
-    color: #fff;
+
 }
-/*
- div.topleft {
-    position: fixed;
-    top: 0;
-    left: 33px;
-    padding: 4px;
-    font-weight: bold;
-    font-size: 44px;
-    color: #5500ff;
-    opacity: 0.5;
-  }*/
 
 /*--------------------------------*/
 /*Maps*/
@@ -57,9 +40,10 @@ a:active {
     height: 768px;
 }
 
-
+a#infowindow {
+    color:#CE6EAE;
+}
 
 .window-content {
-    /*color: #04162b;*/
     width: 150px;
 }

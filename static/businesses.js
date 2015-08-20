@@ -1,16 +1,3 @@
-// function makeIcon (params) {
-//     if ( params.nearMe ) IHAVEVISITED {
-//         if () HEALTHYSALON {
-//             return 'static/img/nails-small-green-purple.png'
-//         }
-//         return 'static/img/nails-small-purple.png'
-//     }
-//     else if HEALTHYSALON {
-//         return 'static/img/nails-small-green.png'
-//     }
-//     else return 'static/img/nails-small.png'
-// }
-
 function initialize() {
 
     // Import mapstyles from external .js file
@@ -75,7 +62,7 @@ function initialize() {
                 title: 'Business name: ' + business.business_name,
                 animation: google.maps.Animation.DROP,
                 // icon: makeIcon( currentOptions )
-                icon: 'static/img/nails-small.png'
+                icon: business.marker
 
             });
        
@@ -95,8 +82,9 @@ function initialize() {
             // Define the content of the infoWindow
             contentString = (
                 '<div class="window-content">' +
-                    '<p><b><a href=\"/salons/' + business.yelp_id + '\">' +
-                    business.business_name + '</b></p>' + 
+                    '<p><b><h2 class="animated zoomIn">' + 
+                    '<a id="infowindow" href=\"/salons/' + business.yelp_id + '\">' +
+                    business.business_name + '</b></h2></p>' + 
                     '<p>(Click Here For More Info)</p></a></p>' +
                     '<p><b>Address: </b>' + business.address + '</p>' +
                     '<p><b>Phone: </b>' + business.phone + '</p>' +

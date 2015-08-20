@@ -62,7 +62,7 @@ function initialize() {
                     map: map,
                     title: 'Business name: ' + business.business_name,
                     animation: google.maps.Animation.DROP,
-                    icon: '/static/img/nails-small.png'
+                    icon: business.marker
                    
                 });
            
