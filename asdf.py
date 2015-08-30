@@ -336,16 +336,21 @@ def show_salon(yelp_id):
 
     instagrams = ""
     instalocation = hours_instalocation['instalocation']
+    instaname = business_name
+    recent_photos_5 = []
+
     # print instalocation
-    if instalocation != 'NONE':
-        recent_photos = salon_info_instapics(instalocation)  #[[url, src], [url, src]...]
-        recent_photos_5 = recent_photos.values()[0].values()[0]
-        instaname = recent_photos.values()[0].keys()[0]
-    else:
-        instaname = business_name
+    if instalocation is 'NONE':
         recent_photos_5 = ['null.jpg', 'null.jpg', 'null.jpg', 'null.jpg', 'null.jpg']
-        print "Instagram photos not found for: " + business_name
         instagrams = "hidden"
+        print "Instagram photos not found for: " + business_name
+    else:
+        try:
+            recent_photos = salon_info_instapics(instalocation)  #[[url, src], [url, src]...]
+            recent_photos_5 = recent_photos.values()[0].values()[0]
+            instaname = recent_photos.values()[0].keys()[0]
+        except:
+            print "No photos for this instagram location ID"
 
     healthynails = "hidden"
     for healthynails_salons in healthynails_dict().keys():

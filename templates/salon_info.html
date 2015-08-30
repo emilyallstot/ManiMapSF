@@ -23,43 +23,88 @@
 <!-- <span id="single-map" align="center"></span> -->
 <p class="yelpID" id="{{ yelp_id }}" hidden></p>
 </p>
-<div id="container">
+<div id="container" class="container-fluid">
 
-<h1>{{ business_name}}</h1>
-<br>
-<h4>{{ address }}</h4>
-<h4>{{ phone }}</h4>
+<div class="row">
 
-<p {{ healthynails }}><a href="http://www.sfenvironment.org/healthy-nail-salon-program" target="_blank"><img src="/static/img/healthynailslogo.png" width=166px></a></p>
+	<h1 align="center">
 
-<br>
-<h3><a href="http://www.yelp.com/biz/{{ yelp_id }}" target="_blank">{{ business_name}} on Yelp</a><br></h3>
+	{{ business_name}}
 
-<br>
-<h4 >
-	<p  {{ instagrams }}><h3  {{ instagrams }}>Recent photos of <a href="https://instagram.com/explore/locations/{{ instalocation }}" target="_blank">{{ instaname }} on Instagram:</h3></a></p>
-</h4>
-	{% for pic in recent_photos %}
-		<a href="{{ pic[1] }}" target="_blank"  {{ instagrams }}>
-		<img src="{{ pic[0] }}" width=150px padding=50pm  {{ instagrams }}>
-		</a>
+	{% if open_now %}
+		<b>:  {{ open_now }}</b>
+	{% endif %}
+	</h1>
 
-	{% endfor %}
+	<h4 align="center">{{ address }}</h4>
+	<h4 align="center">{{ phone }}</h4>
+	<br>
+</div>
+
+<div class="row">
 
 
-<br>
-<br>
-<h4><b>Hours:</b></h4>
-<h3><b>{{ open_now }}</b></h3>
-<br>
-<p>Monday: {{openhours['Monday']}}</p>
-<p>Tuesday: {{openhours['Tuesday']}}</p>
-<p>Wednesday: {{openhours['Wednesday']}}</p>
-<p>Thursday: {{openhours['Thursday']}}</p>
-<p>Friday: {{openhours['Friday']}}</p>
-<p>Saturday: {{openhours['Saturday']}}</p>
-<p>Sunday: {{openhours['Sunday']}}</p>
 
-<br>
+
+
+	<div class="col-xs-3">
+
+
+
+
+		<h3>Hours:</h3>
+		<br>
+		<p>Monday: {{openhours['Monday']}}</p>
+		<p>Tuesday: {{openhours['Tuesday']}}</p>
+		<p>Wednesday: {{openhours['Wednesday']}}</p>
+		<p>Thursday: {{openhours['Thursday']}}</p>
+		<p>Friday: {{openhours['Friday']}}</p>
+		<p>Saturday: {{openhours['Saturday']}}</p>
+		<p>Sunday: {{openhours['Sunday']}}</p>
+		<br>
+
+				<p {{ healthynails }} align=center>
+			<a href="http://www.sfenvironment.org/healthy-nail-salon-program" target="_blank"><img src="/static/img/healthynailslogo.png" height=99px alt="Yelp Logo"></a></p>
+
+		<br>
+
+
+		
+	</div>
+
+	<div class="col-xs-9">
+		<p  {{ instagrams }}><h3  {{ instagrams }}><a href="https://instagram.com/explore/locations/{{ instalocation }}" target="_blank">
+				Recent photos of {{ instaname }} on Instagram:</h3></a></p>
+		<p padding-bottom:100px>
+		{% for pic in recent_photos %}
+			<a href="{{ pic[1] }}" target="_blank"  {{ instagrams }}>
+			<img src="{{ pic[0] }}" width=150px padding=50pm  {{ instagrams }}>
+			</a>
+		{% endfor %}
+		</p>
+
+		<br>
+
+
+		<h3><a href="http://www.yelp.com/biz/{{ yelp_id }}" target="_blank">{{ business_name}} reviews on <img src="/static/img/yelplogo.png" height=33px margin-bottom:99px>
+		</a><br></h3>
+		
+
+
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 {% endblock %}
