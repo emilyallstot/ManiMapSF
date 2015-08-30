@@ -88,11 +88,7 @@ function initialize() {
                     // business.business_name + '</b></h2></p>' + 
                     // '<p>(Click For More Info)</a></p>' +
 
-                    '<a href=\"/salons/' + business.yelp_id + '\"' +
-                    'onClick="MyWindow=window.open' + 
-                    '(\'/salons/' + business.yelp_id + '\',' + 
-                    '\'MyWindow\',width=600,height=300);' +
-                    'return false;\">' + 
+                    '<a href=\"/salons/' + business.yelp_id + '\"' + 
                     '<p><b><h2 class="animated zoomIn">' + 
                     business.business_name + '</b></h2></p>' + 
                     '<p>(Click For More Info)</a></p>' +
