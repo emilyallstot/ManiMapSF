@@ -190,6 +190,17 @@ def map():
     """Show map of businesses."""
     return render_template("map.html")
 
+@app.route('/healthy')
+def map_healthy():
+    """Show map of businesses."""
+    return render_template("map-healthy.html")
+
+@app.route('/visited')
+def map_visited():
+    """Show map of businesses."""
+    return render_template("map-visited.html")
+
+
 @app.route('/about')
 def about_this():
     return render_template("about.html")
@@ -283,6 +294,87 @@ def business_list():
         except:
             "Error changing marker color for " + key
     return jsonify(businesses_for_map)
+
+@app.route('/business_list_visited.json')
+def business_list_visited():
+    """JSON information about businessess.
+    had to remove: la-crEme-spa-san-francisco-2, remEde-spa-san-francisco-2
+    """
+    now_datetime = datetime.datetime.now()
+    today = now_datetime.strftime('%A')
+
+    businesses = read_manimap()
+    hours = yelp_ids_hours_csv_to_dict()
+    businesses_for_map = {}
+
+    for key, values in businesses.items():
+        try:
+            businesses_for_map[key] = values
+        except:
+            "Error retrieving basic business info for: " + key
+        try:
+            businesses_for_map[key].update({'todaysHours': hours[key][today]})
+        except:
+            "Couldn't get business hours for " + key
+        try:
+            businesses_for_map[key].update({'openNow': openNow(hours[key][today])})
+        except: 
+            "Couldn't find if " + key + " is open right now."
+        try:
+            businesses_for_map[key].update({'marker': marker_colors(key)})
+        except:
+            "Error changing marker color for " + key
+
+
+    businesses_for_map_visited = {}
+
+    for key, values in businesses_for_map.items():
+        if businesses_for_map[key]['marker'] == '/static/img/visited.png'\
+            or businesses_for_map[key]['marker'] =='/static/img/healthy-visited.png':
+            businesses_for_map_visited[key] = businesses_for_map[key]
+        # print businesses_for_map_visited
+
+    return jsonify(businesses_for_map_visited)
+
+
+@app.route('/business_list_healthy.json')
+def business_list_healthy():
+    """JSON information about businessess.
+    had to remove: la-crEme-spa-san-francisco-2, remEde-spa-san-francisco-2
+    """
+    now_datetime = datetime.datetime.now()
+    today = now_datetime.strftime('%A')
+
+    businesses = read_manimap()
+    hours = yelp_ids_hours_csv_to_dict()
+    businesses_for_map = {}
+
+    for key, values in businesses.items():
+        try:
+            businesses_for_map[key] = values
+        except:
+            "Error retrieving basic business info for: " + key
+        try:
+            businesses_for_map[key].update({'todaysHours': hours[key][today]})
+        except:
+            "Couldn't get business hours for " + key
+        try:
+            businesses_for_map[key].update({'openNow': openNow(hours[key][today])})
+        except: 
+            "Couldn't find if " + key + " is open right now."
+        try:
+            businesses_for_map[key].update({'marker': marker_colors(key)})
+        except:
+            "Error changing marker color for " + key
+
+    businesses_for_map_healthy = {}
+
+    for key, values in businesses_for_map.items():
+        if businesses_for_map[key]['marker'] == '/static/img/healthy.png'\
+            or businesses_for_map[key]['marker'] =='/static/img/healthy-visited.png':
+            businesses_for_map_healthy[key] = businesses_for_map[key]
+
+    return jsonify(businesses_for_map_healthy)
 
 
 @app.route('/auto')
